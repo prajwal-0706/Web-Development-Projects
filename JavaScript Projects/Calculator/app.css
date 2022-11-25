@@ -1,0 +1,41 @@
+.main{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+input.a, input.b, input.c, input.d, div.qwe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbers{
+    margin: 20px;
+}
+
+.firstline, .secondline, .thirdline, .fourthline, .joshi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+} 
+
+button {
+    margin: 8px;
+    padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
