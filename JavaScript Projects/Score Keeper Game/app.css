@@ -1,0 +1,15 @@
+span#class{
+    text-align: center;
+    display :block;
+    
+}
+
+
+button{
+    margin: 15px;
+}
+.red{
+    text-align: center;
+    /* display :block; */
+    
+}
