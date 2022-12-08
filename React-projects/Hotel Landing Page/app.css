@@ -1,0 +1,97 @@
+body {
+margin: 0px;
+display: absolute;
+}
+
+nav {
+display: flex;
+/* margin: 10px; */
+background-color: #edede9;
+padding: 8px;
+}
+
+li a {
+text-decoration: none;
+font-family: "Helvetica", "sans-serif";
+margin: 13px;
+font-weight: 600;
+color: #4a4a4a;
+/* padding: 15px; */
+}
+
+ul {
+list-style-type: none;
+display: flex;
+padding-top: 12px;
+}
+img {
+margin-left: 68px;
+display: absolute;
+height: 40px;
+padding-top: 0px;
+padding-left: 10px;
+}
+
+.log {
+display: flex;
+margin-left: 75px;
+}
+
+select {
+margin-right: 20px;
+margin-bottom: 3px;
+}
+
+button {
+margin-left: 15px;
+margin-top: -3px;
+padding: 2px;
+padding-left: 5px;
+padding-right: 5px;
+}
+.slide {
+margin-top: 0px;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+width: 100%;
+height: 50vh;
+overflow-x: hidden;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.slide1 {
+background-image: url("https://www.tajhotels.com/content/dam/tajhotels/campaign/Sawai-Man-Mahal-Banner%281200x400%29.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg");
+}
+
+.slide2 {
+background-image: url("https://www.tajhotels.com/content/dam/ihcl/paathya/pathya_landing_page/carecations/Carecations-banner-1200x400.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg");
+}
+
+.slide3 {
+background-image: url("https://www.tajhotels.com/content/dam/tajhotels/campaign/she-remains-the-taj/woyage/woyage-desktop-banner.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg");
+}
+
+.arrow {
+cursor: pointer;
+position: absolute;
+top: 150px;
+margin-top: 40px;
+width: 0;
+height: 0;
+border-style: ridge;
+}
+#arrow-left {
+border-width: 20px 30px 20px 0;
+border-color: transparent #fff transparent transparent;
+left: 0;
+margin-left: 20px;
+}
+
+#arrow-right {
+border-width: 20px 0 20px 30px;
+border-color: transparent transparent transparent #fff;
+right: 0;
+margin-right: 20px;
+}
