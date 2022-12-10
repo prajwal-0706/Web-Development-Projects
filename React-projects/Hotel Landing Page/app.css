@@ -8,7 +8,7 @@ display: flex;
 /* margin: 10px; */
 background-color: #edede9;
 font-family: "Helvetica", "sans-serif";
-padding: 5px;
+padding: 3px;
 }
 
 li a {
@@ -21,7 +21,7 @@ color: #4a4a4a;
 letter-spacing: 0.5px;
 }
 
-ul {
+ul.class1 {
 list-style-type: none;
 display: flex;
 padding-top: 12px;
@@ -121,7 +121,7 @@ div.line{
 
 div.text, .text1{
     margin-bottom: -30px;
-    padding: 14px;
+    padding: 12px;
 }
 
 div.text1,button{
@@ -143,3 +143,24 @@ div.text1,button{
     width: 100%;
 }
 
+div.offers{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+    color: #4a4949;
+}
+.paragraph{
+    padding: 20px;
+    
+}
+.re{
+    margin: 60px;
+    font-size: 20px;
+    margin-left: 100px;
+    list-style-type: disc;
+}
+.manifest{
+    display:flex;
+}
