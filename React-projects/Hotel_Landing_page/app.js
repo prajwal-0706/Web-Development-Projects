@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
+// import React from "react";
+// import ReactDOM from "react-dom";
 // import Gallery from "./components/gallery";
 
 // ReactDOM.render(<Gallery />, document.querySelector("#root"));
@@ -48,4 +48,4 @@ arrowRight.addEventListener("click", function () {
 startSlide();
 
 
-ReactDOM.render(<h1>Prajwal</h1>,document.getElementById('root') ) 
+// ReactDOM.render(<h1>Prajwal</h1>,document.getElementById('root') ) 
