@@ -156,11 +156,43 @@ div.offers{
     
 }
 .re{
-    margin: 60px;
+    margin: 55px;
     font-size: 20px;
     margin-left: 100px;
     list-style-type: disc;
 }
-.manifest{
+.main_offers{
     display:flex;
+    
+}
+
+.manifest{
+    display: inherit;
+}
+
+.offer_a{
+    
+    /* margin-top: 65px; */
+    background-color: #efeeee;
+    padding-right: 100px;
+    
+}
+
+.w1{
+    padding-left: 100px;
+    font-size: 10px;
+}
+
+.new_img{
+    background-image: url("https://www.tajhotels.com/content/dam/tajhotels/in/en/offers/christmas-and-new-year-offer/home-page1.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg");
+    display: block;
+    width: 738px;
+    height: 523px;
+    margin: 0px;
+
+}
+
+.new{
+    margin: 80px;
+
 }
