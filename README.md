@@ -7,9 +7,9 @@
 
 # [3.Score Keeper Game ](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Score%20Keeper%20Game/)
 
-# [3.Calculator ](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Calculator/)
+# [4.Calculator ](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Calculator/)
 
-# [3.Taj Hotel Clone Website(On Going) ](https://prajwal-0706.github.io/Web-Development-Projects/React-projects/Hotel_Landing_page/)
+# [5.Taj Hotel Clone Website(On Going) ](https://prajwal-0706.github.io/Web-Development-Projects/React-projects/Hotel_Landing_page/)
 
 
 
