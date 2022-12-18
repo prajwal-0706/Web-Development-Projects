@@ -1,0 +1,56 @@
+
+
+
+body{
+    font-size: 25px;
+    background: linear-gradient(90deg,#c33764, #1d2671);  
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: white;
+    
+    
+}
+
+.game{
+    height: 300px;
+    width: 300px;
+}
+
+
+.row{
+    display: flex;
+}
+
+.game-box{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+.restart{
+    padding-top: 30px;
+    margin-bottom: 25px;
+}
+
+button{
+    padding: 6px;
+    cursor: pointer;
+}
+
+.heading{
+    margin-bottom: 25px;
+}
+
+.game-box:hover{
+    cursor: pointer;
+}
