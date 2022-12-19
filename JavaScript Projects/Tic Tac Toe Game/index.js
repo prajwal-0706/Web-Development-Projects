@@ -29,10 +29,12 @@ for(let i = 0 ; i<cells.length ; i++){
  cells[i].addEventListener('click',() => {
     if(flag){
         player1(i);
+        
     }
     else{
         player2(i);
     }
+    checkWin();
  });
 }
 
@@ -44,10 +46,21 @@ function player1 (i){
 function player2 (i){
     cells[i].textContent = "O";
     flag = true;
-    player2S.push(i);
+    player2S.push(i);  
 }
 
 
 function checkWin(){
-    
+    winningComb.find((item) => {
+        if(item.filter((i) => player1S.includes(i).length === 3)){
+            alert("Player 1 Won");
+            return item;
+        }
+        else if(item.filter((i) => player2S.includes(i).length === 3)){
+            alert("Player 2 Won");
+            
+        }
+        return
+    })
 }
+
