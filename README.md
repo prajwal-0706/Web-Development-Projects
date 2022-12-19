@@ -9,7 +9,9 @@
 
 # [4. Calculator ](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Calculator/)
 
-# [5. Taj Hotel Clone Website(On Going) ](https://prajwal-0706.github.io/Web-Development-Projects/React-projects/Hotel_Landing_page/)
+# [5. Tic Tac Toe Game ](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Tic%20Tac%20Toe%20Game/)
+
+# [6. Taj Hotel Clone Website(On Going) ](https://prajwal-0706.github.io/Web-Development-Projects/React-projects/Hotel_Landing_page/)
 
 
 
