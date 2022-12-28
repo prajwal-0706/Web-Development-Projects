@@ -58,10 +58,10 @@ body{
     border-radius: 15px;  
     font-family: "Andika", sans-serif;
     color: black;
-    font-size: 14px;
-    padding: 10px 20px 10px 20px;
+    font-size: 17px;
+    padding: 8px 16px 8px 16px;
     text-decoration: none;
-    margin-top: 25px;
+    margin-top: 35px;
     transition: all 0.3s;
   }
   
@@ -71,6 +71,7 @@ body{
     -webkit-box-shadow: 1px 1px 11px #170617;
     -moz-box-shadow: 1px 1px 11px #170617;
     box-shadow: 1px 1px 11px #170617;
+    cursor: pointer;
   }
   
 
