@@ -64,6 +64,5 @@ button{
     position: absolute;
     top: 330px;
     right: 385px;
-    transition : ease-out 1s;
-      
+    transition : width 1s;    
 }
