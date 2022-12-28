@@ -4,22 +4,31 @@ body{
     font-size: 25px;
     background: linear-gradient(90deg,#c33764, #1d2671);  
     transition: all 0.8s;
+    background-image: url("./images/6.webp");
+   
+
 }
 
 .container{
     display: block;  
     /* position: relative; */
-    background-color: white;
+
+    
     width: 50%;
     margin-top: 3%; 
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 30px;
+    
 }
 
 .game{
     height: 300px;
     width: 300px;
+    background-color: white;
+    transition: all  0.3s;
+    opacity: 1;
+   
 }
 
 
@@ -37,6 +46,7 @@ body{
     font-family: sans-serif;
     font-weight: 700;
     font-size: 50px;
+   
 }
 
 
@@ -76,8 +86,12 @@ body{
   
 
 .heading{
+    
     margin-bottom: 25px;
+    padding-top: 20px;
+    
     font-family:"Kanit", "Andika", sans-serif;
+    /* background-color: whitesmoke; */
 }
 
 .game-box:hover{
@@ -102,7 +116,8 @@ body{
 }
 
 .player{
-    
-    transition : all 0.8s ease-out;  
+    font-size: 30px;
+    font-family: "Andika", sans-serif;
+    margin-left: 5%;
 
 }

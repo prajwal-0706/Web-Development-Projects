@@ -129,6 +129,7 @@ function clear(){
     left_image.style.opacity = '0' ;
     right_image.style.opacity = '0' ;
     player_display.innerHTML = "";
+    flag = true;
 }
 restart.addEventListener('click',clear)
 
@@ -136,17 +137,17 @@ function player_1_won(){
     left_image.style.opacity = '1' ;
     right_image.style.opacity = '1' ;
     player_display.style.transition = "0.8s";
-    player_display.innerHTML = "<h3>Player 1 Won ✨</h3>"
+    player_display.innerHTML = "<h1>Player 1 Won ✨</h1>"
 }
 function player_2_won(){
     left_image.style.opacity = '1' ;
     right_image.style.opacity = '1' ;
     player_display.style.transition = "0.8s";
-    player_display.innerHTML = "<h3>Player 2 Won ✨</h3>"
+    player_display.innerHTML = "<h1>Player 2 Won ✨</h1>"
 }
 
 function tie_or_wot(){
-    player_display.innerHTML = "<h3>Well Played Both...Its a Tie</h3>";
+    player_display.innerHTML = "<h1>Well Played Both...Its a Tie</h1>";
     left_image.style.opacity = '1' ;
     right_image.style.opacity = '1' ;
     player_display.style.transition = "0.8s";
