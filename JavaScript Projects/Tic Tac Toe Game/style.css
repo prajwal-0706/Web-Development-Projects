@@ -51,3 +51,7 @@ button{
 .game-box:hover{
     cursor: pointer;
 }
+
+.left{
+    background-image: url("https://tenor.com/en-GB/view/gil-cat-dancey-gif-25677169");
+}
