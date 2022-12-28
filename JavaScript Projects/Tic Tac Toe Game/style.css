@@ -3,6 +3,7 @@ body{
     padding: 0px;
     font-size: 25px;
     background: linear-gradient(90deg,#c33764, #1d2671);  
+    transition: all 0.8s;
 }
 
 .container{
@@ -10,9 +11,10 @@ body{
     /* position: relative; */
     background-color: white;
     width: 50%;
-    margin-top: 10%; 
+    margin-top: 3%; 
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .game{
@@ -32,6 +34,9 @@ body{
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 50px;
 }
 
 
@@ -40,13 +45,38 @@ body{
     margin-bottom: 25px;
 }
 
-button{
-    padding: 6px;
-    cursor: pointer;
-}
+
+.btn {
+    background: #aa34d9;
+    background-image: -webkit-linear-gradient(top, #aa34d9, #2b66b8);
+    background-image: -moz-linear-gradient(top, #aa34d9, #2b66b8);
+    background-image: -ms-linear-gradient(top, #aa34d9, #2b66b8);
+    background-image: -o-linear-gradient(top, #aa34d9, #2b66b8);
+    background-image: linear-gradient(to bottom, #aa34d9, #2b66b8);
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;  
+    font-family: "Andika", sans-serif;
+    color: black;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: all 0.3s;
+  }
+  
+  .btn:hover {
+    background: #9181c4;
+    text-decoration: none;
+    -webkit-box-shadow: 1px 1px 11px #170617;
+    -moz-box-shadow: 1px 1px 11px #170617;
+    box-shadow: 1px 1px 11px #170617;
+  }
+  
 
 .heading{
     margin-bottom: 25px;
+    font-family:"Kanit", "Andika", sans-serif;
 }
 
 .game-box:hover{
@@ -57,12 +87,21 @@ button{
     position: absolute;
     left: 385px;
     top: 330px;
-    transition : ease-out 1s;
+    transition : all 0.8s ease-out;  
+    opacity: 0;
 }
 
 .right{
     position: absolute;
     top: 330px;
     right: 385px;
-    transition : width 1s;    
+    transition : all 0.8s ease-out;   
+    opacity: 0; 
+   
+}
+
+.player{
+    
+    transition : all 0.8s ease-out;  
+
 }
