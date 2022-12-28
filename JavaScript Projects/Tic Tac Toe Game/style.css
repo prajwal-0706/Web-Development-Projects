@@ -7,6 +7,7 @@ body{
 
 .container{
     display: block;  
+    /* position: relative; */
     background-color: white;
     width: 50%;
     margin-top: 10%; 
@@ -53,5 +54,16 @@ button{
 }
 
 .left{
-    background-image: url("https://tenor.com/en-GB/view/gil-cat-dancey-gif-25677169");
+    position: absolute;
+    left: 385px;
+    top: 330px;
+    transition : ease-out 1s;
+}
+
+.right{
+    position: absolute;
+    top: 330px;
+    right: 385px;
+    transition : ease-out 1s;
+      
 }
