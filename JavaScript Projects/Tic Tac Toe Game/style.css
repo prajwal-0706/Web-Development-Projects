@@ -4,7 +4,7 @@ body{
     font-size: 25px;
     background: linear-gradient(90deg,#c33764, #1d2671);  
     transition: all 0.8s;
-    background-image: url("./images/6.webp");
+    background-image: url("./images/6.webp") !important;
     /* font-family: "Andika", sans-serif; */
    
 
