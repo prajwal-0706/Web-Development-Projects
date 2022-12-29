@@ -88,7 +88,7 @@ body{
 .heading{
     
     margin-bottom: 25px;
-    padding-top: 20px;
+    padding-top: 40px;
     
     font-family:"Kanit", "Andika", sans-serif;
     /* background-color: whitesmoke; */
@@ -119,9 +119,4 @@ body{
     font-size: 30px;
     font-family: "Andika", sans-serif;
     margin-left: 5%;
-
-
-
-    
-
 }
