@@ -16,14 +16,16 @@ const right_image = document.querySelector(".right");
 const player_display = document.querySelector(".player");
 
 
-
-
-
 let flag = true;
 
-
-
-
+function display(){
+    if(flag){
+        player_display.innerHTML = "<h1>Turn For 'X'</h1>"
+    }
+    else{
+        player_display.innerHTML = "<h1>Turn For 'O'</h1>"
+    }
+}
 
 cells.forEach(element => {
     element.addEventListener('click',() =>{
@@ -31,11 +33,13 @@ cells.forEach(element => {
             if(flag){
                 element.innerHTML = "X";
                 flag = false;
+                display();
                 
             }
             else{
                 element.innerHTML = "O";
                 flag = true;
+                display();
             }
             // first Row Win
             if((b1.textContent === 'X'&& b2.textContent === 'X') && (b2.textContent === 'X' && b3.textContent === 'X')){
@@ -128,7 +132,7 @@ function clear(){
     })
     left_image.style.opacity = '0' ;
     right_image.style.opacity = '0' ;
-    player_display.innerHTML = "";
+    player_display.innerHTML = "<h1>Turn For 'X'</h1>"
     flag = true;
 }
 restart.addEventListener('click',clear)

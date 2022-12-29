@@ -5,6 +5,7 @@ body{
     background: linear-gradient(90deg,#c33764, #1d2671);  
     transition: all 0.8s;
     background-image: url("./images/6.webp");
+    /* font-family: "Andika", sans-serif; */
    
 
 }
@@ -118,5 +119,6 @@ body{
 .player{
     font-size: 30px;
     font-family: "Andika", sans-serif;
-    margin-left: 5%;
+    margin-left: 2%;
+    
 }
