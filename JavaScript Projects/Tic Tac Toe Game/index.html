@@ -22,8 +22,8 @@
 
     
         <div class="select">
-            <select name="" id="" aria-placeholder="Hello World">
-                <option value="">Select Your Choice</option>
+            <select onchange="hello(this.value)" name="" id="choose">
+                <option value="#">Select Your Choice</option>
                 <option value="5">5</option>
                 <option value="6">6</option>
                 <option value="7">7</option>
@@ -32,11 +32,11 @@
                 <option value="10">10</option>
             </select>
         </div>
-        <button><a href="./page1.html">START</a></button>
+        <button id="myBtn"><a class="anchor" href="./page1.html">START</a></button>
     </div>
 
 
 
-    <script src="./app.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

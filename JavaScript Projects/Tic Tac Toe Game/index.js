@@ -1,3 +1,6 @@
+// Code for tic tac toe 
+
+// Start
 const cells = document.querySelectorAll('.game-box');
 const Player1 = document.querySelector('.player1');
 const Player2 = document.querySelector('.player2');
@@ -135,7 +138,7 @@ function clear(){
     player_display.innerHTML = "<h1>Turn For 'X'</h1>"
     flag = true;
 }
-restart.addEventListener('click',clear)
+restart.addEventListener('click',clear);
 
 function player_1_won(){
     left_image.style.opacity = '1' ;
@@ -156,3 +159,37 @@ function tie_or_wot(){
     right_image.style.opacity = '1' ;
     player_display.style.transition = "0.8s";
 }
+
+// End
+
+// Driver Code for index page
+
+//Start
+
+const button = document.querySelector('button');
+const select = document.getElementById('choose');
+
+function hello(value){
+    document.cookie = value;
+    
+    console.log(value);
+    
+    console.log(getcookie());
+    
+    
+}
+
+
+
+ 
+function getcookie(){
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+
+    return ca[0];
+}
+
+let anchor = document.querySelector('a').setAttribute('href','https://www.google.com');
+
+// anchor.setAttribute('href','https://www');
+button.disabled = 'true';
