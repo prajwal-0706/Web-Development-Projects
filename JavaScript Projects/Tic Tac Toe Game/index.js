@@ -185,11 +185,5 @@ function hello(value){
 function getcookie(){
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
-
     return ca[0];
 }
-
-let anchor = document.querySelector('a').setAttribute('href','https://www.google.com');
-
-// anchor.setAttribute('href','https://www');
-button.disabled = 'true';
