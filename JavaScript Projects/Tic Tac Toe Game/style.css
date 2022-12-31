@@ -6,6 +6,8 @@ body{
     transition: all 0.8s;
     background-image: url("./images/6.webp") !important;
     /* font-family: "Andika", sans-serif; */
+    user-select: none;
+    overflow: hidden;
    
 
 }
@@ -121,4 +123,19 @@ body{
     font-family: "Andika", sans-serif;
     margin-left: 2%;
     
+}
+
+.Player1S{
+    left: 200px;
+    top: 45%;
+    position: absolute;
+    font-family: 'Patua One', cursive;
+    font-size: 30px;
+}
+.Player2S{
+    right: 200px;
+    top: 45%;
+    font-family: 'Patua One', cursive;
+    position: absolute;
+    font-size: 30px;
 }

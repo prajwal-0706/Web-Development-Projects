@@ -14,9 +14,13 @@ const b6 = document.getElementById("b6");
 const b7 = document.getElementById("b7");
 const b8 = document.getElementById("b8");
 const b9 = document.getElementById("b9");
+const Player1Display = document.querySelector(".Player1S");
 const left_image = document.querySelector(".left");
 const right_image = document.querySelector(".right");
 const player_display = document.querySelector(".player");
+let Player1Score = 0;
+let Player2Score = 0;
+
 
 
 let flag = true;
@@ -145,6 +149,9 @@ function player_1_won(){
     right_image.style.opacity = '1' ;
     player_display.style.transition = "0.8s";
     player_display.innerHTML = "<h1>Player 1 Won ✨</h1>"
+    Player1Score++;
+    Player1Display.textContent = `Player 1 : ${Player1Score}`;
+    
 }
 function player_2_won(){
     left_image.style.opacity = '1' ;
@@ -162,7 +169,7 @@ function tie_or_wot(){
 
 // End
 
-// Driver Code for index page
+// Driver Code for index page....
 
 //Start
 
@@ -175,15 +182,38 @@ function hello(value){
     console.log(value);
     
     console.log(getcookie());
+
+    Calculate();
     
     
 }
-
-
-
  
 function getcookie(){
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
     return ca[0];
+}
+
+function Calculate(){
+
+    let total_count;
+    if(getcookie() === '#'){
+        total_count = 5;
+    }
+    else{
+        total_count = getcookie();
+    }
+    
+
+    var w = total_count/2 + 1;
+    let win = parseInt(w);
+
+    return(win);
+
+    
+}
+
+function Start_Game(){
+    let pr = Calculate();
+
 }
