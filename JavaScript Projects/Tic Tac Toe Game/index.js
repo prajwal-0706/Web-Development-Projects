@@ -15,6 +15,7 @@ const b7 = document.getElementById("b7");
 const b8 = document.getElementById("b8");
 const b9 = document.getElementById("b9");
 const Player1Display = document.querySelector(".Player1S");
+const Player2Display = document.querySelector('.Player2S');
 const left_image = document.querySelector(".left");
 const right_image = document.querySelector(".right");
 const player_display = document.querySelector(".player");
@@ -51,7 +52,9 @@ cells.forEach(element => {
             // first Row Win
             if((b1.textContent === 'X'&& b2.textContent === 'X') && (b2.textContent === 'X' && b3.textContent === 'X')){
                 player_1_won();
-                setTimeout(clear,3000);            
+                setTimeout(Img,3000);
+                alert("Player 1 Won");
+                clear();       
             }
             if((b1.textContent === 'O'&& b2.textContent === 'O') && (b2.textContent === 'O' && b3.textContent === 'O')){
                 player_2_won();
@@ -63,6 +66,7 @@ cells.forEach(element => {
                 setTimeout(clear,3000);
             }
             if((b4.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b6.textContent === 'O')){
+                
                 player_2_won();
                 setTimeout(clear,3000);
             }
@@ -137,16 +141,20 @@ function clear(){
     cells.forEach((element) =>{
         element.innerHTML = "";
     })
-    left_image.style.opacity = '0' ;
-    right_image.style.opacity = '0' ;
+    // left_image.style.opacity = '0' ;
+    // right_image.style.opacity = '0' ;
     player_display.innerHTML = "<h1>Turn For 'X'</h1>"
     flag = true;
+    
 }
 restart.addEventListener('click',clear);
 
+function Img(){
+    left_image.style.opacity = '0' ;
+    right_image.style.opacity = '0' ;
+}
+
 function player_1_won(){
-    left_image.style.opacity = '1' ;
-    right_image.style.opacity = '1' ;
     player_display.style.transition = "0.8s";
     player_display.innerHTML = "<h1>Player 1 Won ✨</h1>"
     Player1Score++;
@@ -158,6 +166,8 @@ function player_2_won(){
     right_image.style.opacity = '1' ;
     player_display.style.transition = "0.8s";
     player_display.innerHTML = "<h1>Player 2 Won ✨</h1>"
+    Player2Score++;
+    Player2Display.textContent = `Player 2 : ${Player2Score}`;
 }
 
 function tie_or_wot(){
@@ -213,7 +223,5 @@ function Calculate(){
     
 }
 
-function Start_Game(){
-    let pr = Calculate();
-
-}
+// function Start_Game(){
+//     let pr = Calculate();
