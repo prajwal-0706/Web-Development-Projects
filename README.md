@@ -11,7 +11,7 @@
 
 # [5. Calculator ](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Calculator/)
 
-# [6. Taj Hotel Clone Website(On Going) ](https://prajwal-0706.github.io/Web-Development-Projects/React-projects/Hotel_Landing_page/)
+# [6. Taj Hotel Clone Website](https://prajwal-0706.github.io/Web-Development-Projects/React-projects/Hotel_Landing_page/)
 
 
 
