@@ -19,8 +19,8 @@ const Player2Display = document.querySelector('.Player2S');
 const left_image = document.querySelector(".left");
 const right_image = document.querySelector(".right");
 const player_display = document.querySelector(".player");
-let Player1Score = 0;
-let Player2Score = 0;
+var Player1Score = 0;
+var Player2Score = 0;
 
 
 
@@ -38,6 +38,7 @@ function display(){
 cells.forEach(element => {
     element.addEventListener('click',() =>{
         if(element.innerHTML !== 'X' && element.innerHTML !== 'O' ){
+            
             if(flag){
                 element.innerHTML = "X";
                 flag = false;
@@ -52,85 +53,116 @@ cells.forEach(element => {
             // first Row Win
             if((b1.textContent === 'X'&& b2.textContent === 'X') && (b2.textContent === 'X' && b3.textContent === 'X')){
                 player_1_won();
-                setTimeout(Img,3000);
                 alert("Player 1 Won");
-                clear();       
+                clear();
+                Calculate();
+
             }
             if((b1.textContent === 'O'&& b2.textContent === 'O') && (b2.textContent === 'O' && b3.textContent === 'O')){
                 player_2_won();
-                setTimeout(clear,3000);
+                clear();
+                alert("Player 2 Won");
+                Calculate();
             }
             // Second row win
             if((b4.textContent === 'X'&& b5.textContent === 'X') && (b5.textContent === 'X' && b6.textContent === 'X')){
                 player_1_won();
-                setTimeout(clear,3000);
+                clear();
+                alert("Player 1 Won");
+                Calculate();
             }
             if((b4.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b6.textContent === 'O')){
                 
                 player_2_won();
-                setTimeout(clear,3000);
+                clear();
+                alert("Player 2 Won");
+                Calculate();
             }
 
             //Third Row Win
             if((b7.textContent === 'X'&& b8.textContent === 'X') && (b8.textContent ==='X' && b9.textContent === 'X')){
-                player_1_won();
-                setTimeout(clear,3000);
+                clear();
+                alert("Player 1 Won");
+                Calculate();
             }
             if((b7.textContent === 'O'&& b8.textContent === 'O') && (b8.textContent === 'O' && b9.textContent === 'O')){
                 player_2_won();
-                setTimeout(clear,3000);
+                clear();
+                alert("Player 2 Won");
+                Calculate();
             }
 
             //first col win
             if((b1.textContent === 'X'&& b4.textContent === 'X') && (b4.textContent ==='X' && b7.textContent === 'X')){
                 player_1_won();
-                setTimeout(clear,3000);
+                clear();
+                alert("Player 1 Won");
+                Calculate();
             }
             if((b1.textContent === 'O'&& b4.textContent === 'O') && (b4.textContent === 'O' && b7.textContent === 'O')){
                 player_2_won();
-                setTimeout(clear,3000);
+                clear();
+                alert("Player 2 Won");
+                Calculate();
             }
             // Second col win
             if((b2.textContent === 'X'&& b5.textContent === 'X') && (b5.textContent === 'X' && b8.textContent === 'X')){
                 player_1_won();
-                setTimeout(clear,3000);
+                clear();
+                alert("Player 1 Won");
+                Calculate();
             }
             if((b2.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b8.textContent === 'O')){
                 player_2_won();
-                setTimeout(clear,3000);
+                clear();
+                alert("Player 2 Won");
+                Calculate();
             }
             //third col win
             if((b3.textContent === 'X'&& b6.textContent === 'X') && (b6.textContent === 'X' && b9.textContent === 'X')){
                 player_1_won();
-                setTimeout(clear,3000);
+                clear();
+                alert("Player 1 Won");
+                Calculate();
             }
             if((b3.textContent === 'O'&& b6.textContent === 'O') && (b6.textContent === 'O' && b9.textContent === 'O')){
                 player_2_won();
-                setTimeout(clear,3000);
+                clear();
+                alert("Player 2 Won");
+                Calculate();
             }
 
             // First Diagonal win
             if((b1.textContent === 'X'&& b5.textContent === 'X') && (b5.textContent === 'X' && b9.textContent === 'X')){
                 player_1_won();
                 clear();
+                alert("Player 1 Won");
+                Calculate();
             }
             if((b1.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b9.textContent === 'O')){
                 player_2_won();
-                 setTimeout(clear,3000);
+                clear();
+                alert("Player 2 Won");
+                Calculate();
             }
 
             // second diagonal win
             if((b3.textContent === 'X'&& b5.textContent === 'X') && (b5.textContent ==='X' && b7.textContent === 'X')){
                 player_1_won();
-                 setTimeout(clear,3000);
+                clear();
+                alert("Player 1 Won");
+                Calculate();
             }
             if((b3.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b7.textContent === 'O')){
                 player_2_won();
-                 setTimeout(clear,3000);
+                clear();
+                alert("Player 2 Won");
+                Calculate();
             }
             if((b1.innerHTML === 'X'|| b1.innerHTML === 'O') && (b2.innerHTML === 'X'|| b2.innerHTML === 'O') && (b3.innerHTML === 'X'|| b3.innerHTML ==='O') && (b4.innerHTML === 'X'|| b4.innerHTML === 'O') && (b5.innerHTML === 'X'|| b5.innerHTML === 'O') && (b6.innerHTML === "X"|| b6.innerHTML === 'O') && (b7.innerHTML === 'X'|| b7.innerHTML === 'O') && (b8.innerHTML === 'X'|| b8.innerHTML === 'O') && (b9.innerHTML === 'X'|| b9.innerHTML === 'O') ){
                 tie_or_wot();
-                setTimeout(clear,3000);
+                setTimeout(clear,2000);
+                Calculate();
             }
         }
 
@@ -162,8 +194,6 @@ function player_1_won(){
     
 }
 function player_2_won(){
-    left_image.style.opacity = '1' ;
-    right_image.style.opacity = '1' ;
     player_display.style.transition = "0.8s";
     player_display.innerHTML = "<h1>Player 2 Won ✨</h1>"
     Player2Score++;
@@ -172,8 +202,6 @@ function player_2_won(){
 
 function tie_or_wot(){
     player_display.innerHTML = "<h1>Well Played Both...Its a Tie</h1>";
-    left_image.style.opacity = '1' ;
-    right_image.style.opacity = '1' ;
     player_display.style.transition = "0.8s";
 }
 
@@ -191,11 +219,7 @@ function hello(value){
     
     console.log(value);
     
-    console.log(getcookie());
-
-    Calculate();
-    
-    
+    console.log(getcookie());   
 }
  
 function getcookie(){
@@ -216,12 +240,16 @@ function Calculate(){
     
 
     var w = total_count/2 + 1;
-    let win = parseInt(w);
+    var win = parseInt(w);
 
-    return(win);
+    if(Player1Score === win || Player2Score === win){
+        if(Player1Score === win){
+            alert("Player 1 Won");
+        }else{
+            alert("Player 2 Won ");
 
+        }
+    }
     
 }
 
-// function Start_Game(){
-//     let pr = Calculate();
