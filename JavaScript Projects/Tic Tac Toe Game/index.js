@@ -36,8 +36,10 @@ function display(){
         player_display.innerHTML = "<h1>Turn For 'O'</h1>"
     }
 }
+cells.forEach(element =>  add(element) );
 
-cells.forEach(element => {
+
+function add(element){
     element.addEventListener('click',() =>{
         if(element.innerHTML !== 'X' && element.innerHTML !== 'O' ){
             
@@ -290,7 +292,9 @@ cells.forEach(element => {
         }
 
     });
-});
+}
+
+
 
 function clear(){
     cells.forEach((element) =>{
