@@ -58,10 +58,15 @@ cells.forEach(element => {
                 player_1_won();
                 alert("Player 1 Won");
                 clear();
-                Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
 
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
+                
             }
             if((b1.textContent === 'O'&& b2.textContent === 'O') && (b2.textContent === 'O' && b3.textContent === 'O')){
                 player_2_won();
@@ -69,7 +74,12 @@ cells.forEach(element => {
                 alert("Player 2 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
             // Second row win
             if((b4.textContent === 'X'&& b5.textContent === 'X') && (b5.textContent === 'X' && b6.textContent === 'X')){
@@ -78,7 +88,12 @@ cells.forEach(element => {
                 alert("Player 1 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
             if((b4.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b6.textContent === 'O')){
                 
@@ -87,7 +102,12 @@ cells.forEach(element => {
                 alert("Player 2 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
 
             //Third Row Win
@@ -96,7 +116,12 @@ cells.forEach(element => {
                 alert("Player 1 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
             if((b7.textContent === 'O'&& b8.textContent === 'O') && (b8.textContent === 'O' && b9.textContent === 'O')){
                 player_2_won();
@@ -104,7 +129,12 @@ cells.forEach(element => {
                 alert("Player 2 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
 
             //first col win
@@ -114,7 +144,12 @@ cells.forEach(element => {
                 alert("Player 1 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
             if((b1.textContent === 'O'&& b4.textContent === 'O') && (b4.textContent === 'O' && b7.textContent === 'O')){
                 player_2_won();
@@ -122,7 +157,12 @@ cells.forEach(element => {
                 alert("Player 2 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
             // Second col win
             if((b2.textContent === 'X'&& b5.textContent === 'X') && (b5.textContent === 'X' && b8.textContent === 'X')){
@@ -131,7 +171,12 @@ cells.forEach(element => {
                 alert("Player 1 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
             if((b2.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b8.textContent === 'O')){
                 player_2_won();
@@ -139,7 +184,12 @@ cells.forEach(element => {
                 alert("Player 2 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
             //third col win
             if((b3.textContent === 'X'&& b6.textContent === 'X') && (b6.textContent === 'X' && b9.textContent === 'X')){
@@ -148,7 +198,12 @@ cells.forEach(element => {
                 alert("Player 1 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
             if((b3.textContent === 'O'&& b6.textContent === 'O') && (b6.textContent === 'O' && b9.textContent === 'O')){
                 player_2_won();
@@ -156,7 +211,12 @@ cells.forEach(element => {
                 alert("Player 2 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
             
 
@@ -167,7 +227,12 @@ cells.forEach(element => {
                 alert("Player 1 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
             if((b1.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b9.textContent === 'O')){
                 player_2_won();
@@ -175,7 +240,12 @@ cells.forEach(element => {
                 alert("Player 2 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
 
             // second diagonal win
@@ -185,7 +255,12 @@ cells.forEach(element => {
                 alert("Player 1 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
             if((b3.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b7.textContent === 'O')){
                 player_2_won();
@@ -193,14 +268,24 @@ cells.forEach(element => {
                 alert("Player 2 Won");
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
             if((b1.innerHTML === 'X'|| b1.innerHTML === 'O') && (b2.innerHTML === 'X'|| b2.innerHTML === 'O') && (b3.innerHTML === 'X'|| b3.innerHTML ==='O') && (b4.innerHTML === 'X'|| b4.innerHTML === 'O') && (b5.innerHTML === 'X'|| b5.innerHTML === 'O') && (b6.innerHTML === "X"|| b6.innerHTML === 'O') && (b7.innerHTML === 'X'|| b7.innerHTML === 'O') && (b8.innerHTML === 'X'|| b8.innerHTML === 'O') && (b9.innerHTML === 'X'|| b9.innerHTML === 'O') ){
                 tie_or_wot();
                 setTimeout(clear,2000);
                 Calculate();
                 totalRounds++;
-                no_of_rounds_on_screen();
+                if(Calculate() === Player1Score || Calculate() === Player2Score){
+                    winner();
+                }
+                else{
+                    setTimeout(no_of_rounds_on_screen,450);
+                }
             }
         }
 
@@ -281,15 +366,38 @@ function Calculate(){
     var w = total_count/2 + 1;
     var win = parseInt(w);
 
-    if(Player1Score === win || Player2Score === win){
-        if(Player1Score === win){
-            alert("Player 1 Won");
+    return win;  
+}
+const heading = document.querySelector('#tichead') ;
+
+let winvalue;
+
+function winner(){
+
+    let winner = Calculate();
+    
+
+    if(Player1Score === winner || Player2Score === winner){
+        if(Player1Score === winner){
+            winvalue = 1;
+            displayWin();
         }else{
-            alert("Player 2 Won ");
+            winvalue = 2;
+            displayWin();
 
         }
     }
-    
+}
+
+function displayWin(){
+    round.style.display = 'block';
+    left_image.style.opacity = '1' ;
+    right_image.style.opacity = '1' ;
+    left_image.style.zIndex = '-1' ;
+    right_image.style.zIndex = '-1' ;
+    round.textContent = '' ;
+    heading.innerHTML = `<h1 id="tichead">Player ${winvalue} Won ✨</h1>`;
+    winvalue = 1;
 }
 
 
