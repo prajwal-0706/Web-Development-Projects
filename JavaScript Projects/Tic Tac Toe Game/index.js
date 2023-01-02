@@ -19,10 +19,12 @@ const Player2Display = document.querySelector('.Player2S');
 const left_image = document.querySelector(".left");
 const right_image = document.querySelector(".right");
 const player_display = document.querySelector(".player");
+const round = document.querySelector('.rounds');
 var Player1Score = 0;
 var Player2Score = 0;
+var totalRounds = 1;
 
-
+no_of_rounds_on_screen();
 
 let flag = true;
 
@@ -50,12 +52,15 @@ cells.forEach(element => {
                 flag = true;
                 display();
             }
+
             // first Row Win
             if((b1.textContent === 'X'&& b2.textContent === 'X') && (b2.textContent === 'X' && b3.textContent === 'X')){
                 player_1_won();
                 alert("Player 1 Won");
                 clear();
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
 
             }
             if((b1.textContent === 'O'&& b2.textContent === 'O') && (b2.textContent === 'O' && b3.textContent === 'O')){
@@ -63,6 +68,8 @@ cells.forEach(element => {
                 clear();
                 alert("Player 2 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
             // Second row win
             if((b4.textContent === 'X'&& b5.textContent === 'X') && (b5.textContent === 'X' && b6.textContent === 'X')){
@@ -70,6 +77,8 @@ cells.forEach(element => {
                 clear();
                 alert("Player 1 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
             if((b4.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b6.textContent === 'O')){
                 
@@ -77,6 +86,8 @@ cells.forEach(element => {
                 clear();
                 alert("Player 2 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
 
             //Third Row Win
@@ -84,12 +95,16 @@ cells.forEach(element => {
                 clear();
                 alert("Player 1 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
             if((b7.textContent === 'O'&& b8.textContent === 'O') && (b8.textContent === 'O' && b9.textContent === 'O')){
                 player_2_won();
                 clear();
                 alert("Player 2 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
 
             //first col win
@@ -98,12 +113,16 @@ cells.forEach(element => {
                 clear();
                 alert("Player 1 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
             if((b1.textContent === 'O'&& b4.textContent === 'O') && (b4.textContent === 'O' && b7.textContent === 'O')){
                 player_2_won();
                 clear();
                 alert("Player 2 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
             // Second col win
             if((b2.textContent === 'X'&& b5.textContent === 'X') && (b5.textContent === 'X' && b8.textContent === 'X')){
@@ -111,12 +130,16 @@ cells.forEach(element => {
                 clear();
                 alert("Player 1 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
             if((b2.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b8.textContent === 'O')){
                 player_2_won();
                 clear();
                 alert("Player 2 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
             //third col win
             if((b3.textContent === 'X'&& b6.textContent === 'X') && (b6.textContent === 'X' && b9.textContent === 'X')){
@@ -124,13 +147,18 @@ cells.forEach(element => {
                 clear();
                 alert("Player 1 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
             if((b3.textContent === 'O'&& b6.textContent === 'O') && (b6.textContent === 'O' && b9.textContent === 'O')){
                 player_2_won();
                 clear();
                 alert("Player 2 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
+            
 
             // First Diagonal win
             if((b1.textContent === 'X'&& b5.textContent === 'X') && (b5.textContent === 'X' && b9.textContent === 'X')){
@@ -138,12 +166,16 @@ cells.forEach(element => {
                 clear();
                 alert("Player 1 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
             if((b1.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b9.textContent === 'O')){
                 player_2_won();
                 clear();
                 alert("Player 2 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
 
             // second diagonal win
@@ -152,17 +184,23 @@ cells.forEach(element => {
                 clear();
                 alert("Player 1 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
             if((b3.textContent === 'O'&& b5.textContent === 'O') && (b5.textContent === 'O' && b7.textContent === 'O')){
                 player_2_won();
                 clear();
                 alert("Player 2 Won");
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
             if((b1.innerHTML === 'X'|| b1.innerHTML === 'O') && (b2.innerHTML === 'X'|| b2.innerHTML === 'O') && (b3.innerHTML === 'X'|| b3.innerHTML ==='O') && (b4.innerHTML === 'X'|| b4.innerHTML === 'O') && (b5.innerHTML === 'X'|| b5.innerHTML === 'O') && (b6.innerHTML === "X"|| b6.innerHTML === 'O') && (b7.innerHTML === 'X'|| b7.innerHTML === 'O') && (b8.innerHTML === 'X'|| b8.innerHTML === 'O') && (b9.innerHTML === 'X'|| b9.innerHTML === 'O') ){
                 tie_or_wot();
                 setTimeout(clear,2000);
                 Calculate();
+                totalRounds++;
+                no_of_rounds_on_screen();
             }
         }
 
@@ -191,6 +229,7 @@ function player_1_won(){
     player_display.innerHTML = "<h1>Player 1 Won ✨</h1>"
     Player1Score++;
     Player1Display.textContent = `Player 1 : ${Player1Score}`;
+   
     
 }
 function player_2_won(){
@@ -252,4 +291,20 @@ function Calculate(){
     }
     
 }
+
+
+function no_of_rounds_on_screen(){
+
+    round.textContent = `Round - ${totalRounds}` ;
+    round.style.display = 'block';
+
+    function clear_from_screen(){
+        round.style.display = 'none';
+    }
+    setTimeout(clear_from_screen,1000);
+}
+
+
+
+
 

@@ -139,3 +139,14 @@ body{
     position: absolute;
     font-size: 30px;
 }
+
+.rounds{
+    position: absolute;
+    right: 560px;
+    top: 285px;
+    z-index: 1;
+    font-size: 80px;
+    font-family: 'Archivo Black', sans-serif;
+    display: none;
+}
+
