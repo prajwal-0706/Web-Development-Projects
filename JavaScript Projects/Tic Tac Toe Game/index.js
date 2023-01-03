@@ -24,12 +24,12 @@ const round = document.querySelector('.rounds');
 const button = document.querySelector('button');
 const select = document.getElementById('choose');
 const heading = document.querySelector('#tichead') ;
+const body = document.querySelector('body');
 var audio = new Audio('./sounds/1.mp3');
 var Player1Score = 0;
 var Player2Score = 0;
 var totalRounds = 1;
 let winvalue;
-
 
 restart.addEventListener('click',clear);
 no_of_rounds_on_screen();
