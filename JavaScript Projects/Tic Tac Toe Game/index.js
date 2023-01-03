@@ -2,6 +2,7 @@
 
 // Start
 const cells = document.querySelectorAll('.game-box');
+const gamebox = document.querySelector('.game');
 const Player1 = document.querySelector('.player1');
 const Player2 = document.querySelector('.player2');
 const restart  = document.querySelector(".btn")
@@ -20,9 +21,13 @@ const left_image = document.querySelector(".left");
 const right_image = document.querySelector(".right");
 const player_display = document.querySelector(".player");
 const round = document.querySelector('.rounds');
+const button = document.querySelector('button');
+const select = document.getElementById('choose');
+const heading = document.querySelector('#tichead') ;
 var Player1Score = 0;
 var Player2Score = 0;
 var totalRounds = 1;
+restart.addEventListener('click',clear);
 
 no_of_rounds_on_screen();
 
@@ -64,6 +69,8 @@ function add(element){
 
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
+                    // Img();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -300,18 +307,32 @@ function clear(){
     cells.forEach((element) =>{
         element.innerHTML = "";
     })
-    // left_image.style.opacity = '0' ;
-    // right_image.style.opacity = '0' ;
-    player_display.innerHTML = "<h1>Turn For 'X'</h1>"
-    flag = true;
-    
-}
-restart.addEventListener('click',clear);
-
-function Img(){
     left_image.style.opacity = '0' ;
     right_image.style.opacity = '0' ;
+    player_display.innerHTML = "<h1>Turn For 'X'</h1>"
+    flag = true;
 }
+function restartgame(){
+    gamebox.style.display = "none";
+    restart.style.display = 'none';
+    player_display.style.display = 'none';
+    Player1Display.innerHTML = "";
+    Player2Display.innerHTML = "";
+    heading.style.transform = "translate(10px,230px)";
+    left_image.style.left = '305px' ;
+    right_image.style.right = '305px' ;
+
+
+
+    // transform: translate(10px, 230px);
+    // left 305px
+}
+// function Img(){
+//     left_image.style.opacity = '0' ;
+//     right_image.style.opacity = '0' ;
+//     heading.innerHTML =`<h1 id="tichead" >Tic Tac Toe Game</h1>`;
+   
+// }
 
 function player_1_won(){
     player_display.style.transition = "0.8s";
@@ -339,8 +360,6 @@ function tie_or_wot(){
 
 //Start
 
-const button = document.querySelector('button');
-const select = document.getElementById('choose');
 
 function hello(value){
     document.cookie = value;
@@ -372,7 +391,7 @@ function Calculate(){
 
     return win;  
 }
-const heading = document.querySelector('#tichead') ;
+
 
 let winvalue;
 
@@ -402,6 +421,7 @@ function displayWin(){
     round.textContent = '' ;
     heading.innerHTML = `<h1 id="tichead">Player ${winvalue} Won ✨</h1>`;
     winvalue = 1;
+    
 }
 
 

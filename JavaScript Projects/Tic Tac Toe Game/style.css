@@ -14,9 +14,7 @@ body{
 
 .container{
     display: block;  
-    /* position: relative; */
-
-    
+    /* position: relative; */  
     width: 50%;
     margin-top: 3%; 
     padding-top: 20px;
@@ -88,6 +86,12 @@ body{
   }
   
 
+  
+  .game-box:hover{
+      cursor: pointer;
+      background-color: aliceblue;
+    }
+    
 .heading{
     
     margin-bottom: 25px;
@@ -95,17 +99,13 @@ body{
     
     font-family: 'Archivo Black', sans-serif;
     /* background-color: whitesmoke; */
+    transition: all 0.5s;
 }
-
-.game-box:hover{
-    cursor: pointer;
-}
-
 .left{
     position: absolute;
     left: 385px;
     top: 330px;
-    transition : all 0.8s ease-out;  
+    transition : all 0.9s ease-out;  
     opacity: 0;
 }
 
@@ -113,8 +113,8 @@ body{
     position: absolute;
     top: 330px;
     right: 385px;
-    transition : all 0.8s ease-out;   
-    opacity: 0; 
+    transition : all 0.9s ease-out;   
+    opacity: 0;
    
 }
 
@@ -132,6 +132,7 @@ body{
     font-family: 'Patua One', cursive;
     font-size: 30px;
 }
+
 .Player2S{
     right: 200px;
     top: 45%;
