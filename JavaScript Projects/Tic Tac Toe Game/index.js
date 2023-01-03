@@ -24,11 +24,14 @@ const round = document.querySelector('.rounds');
 const button = document.querySelector('button');
 const select = document.getElementById('choose');
 const heading = document.querySelector('#tichead') ;
+var audio = new Audio('./sounds/1.mp3');
 var Player1Score = 0;
 var Player2Score = 0;
 var totalRounds = 1;
-restart.addEventListener('click',clear);
+let winvalue;
 
+
+restart.addEventListener('click',clear);
 no_of_rounds_on_screen();
 
 let flag = true;
@@ -51,8 +54,7 @@ function add(element){
             if(flag){
                 element.innerHTML = "X";
                 flag = false;
-                display();
-                
+                display();             
             }
             else{
                 element.innerHTML = "O";
@@ -85,6 +87,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -99,6 +102,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -113,6 +117,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -127,6 +132,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -140,6 +146,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -155,6 +162,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -168,6 +176,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -182,6 +191,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -195,6 +205,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -209,6 +220,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -222,6 +234,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -238,6 +251,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -251,6 +265,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -266,6 +281,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -279,6 +295,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -291,6 +308,7 @@ function add(element){
                 totalRounds++;
                 if(Calculate() === Player1Score || Calculate() === Player2Score){
                     winner();
+                    restartgame();
                 }
                 else{
                     setTimeout(no_of_rounds_on_screen,450);
@@ -321,9 +339,7 @@ function restartgame(){
     heading.style.transform = "translate(10px,230px)";
     left_image.style.left = '305px' ;
     right_image.style.right = '305px' ;
-
-
-
+    audio.play();
     // transform: translate(10px, 230px);
     // left 305px
 }
@@ -393,7 +409,6 @@ function Calculate(){
 }
 
 
-let winvalue;
 
 function winner(){
 
@@ -435,8 +450,3 @@ function no_of_rounds_on_screen(){
     }
     setTimeout(clear_from_screen,1000);
 }
-
-
-
-
-

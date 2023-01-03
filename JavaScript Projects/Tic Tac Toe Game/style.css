@@ -99,7 +99,7 @@ body{
     
     font-family: 'Archivo Black', sans-serif;
     /* background-color: whitesmoke; */
-    transition: all 0.5s;
+    transition: all 1s;
 }
 .left{
     position: absolute;
