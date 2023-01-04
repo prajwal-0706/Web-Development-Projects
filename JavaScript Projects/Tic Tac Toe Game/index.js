@@ -340,6 +340,7 @@ function restartgame(){
     left_image.style.left = '305px' ;
     right_image.style.right = '305px' ;
     audio.play();
+    newgame();
     // transform: translate(10px, 230px);
     // left 305px
 }
@@ -449,4 +450,12 @@ function no_of_rounds_on_screen(){
         round.style.display = 'none';
     }
     setTimeout(clear_from_screen,1000);
+}
+
+function newgame(){
+    restart.textContent = "NEW GAME";
+    restart.style.display = "block";
+    restart.style.transform = 'translate(-15px,300px)';
+    restart.href = "./index.html"
+    
 }
