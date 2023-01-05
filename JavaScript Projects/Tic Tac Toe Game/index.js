@@ -26,6 +26,7 @@ const select = document.getElementById('choose');
 const heading = document.querySelector('#tichead') ;
 const body = document.querySelector('body');
 var audio = new Audio('./sounds/1.mp3');
+let butt = document.querySelector('.button');
 var Player1Score = 0;
 var Player2Score = 0;
 var totalRounds = 1;
@@ -456,6 +457,6 @@ function newgame(){
     restart.textContent = "NEW GAME";
     restart.style.display = "block";
     restart.style.transform = 'translate(-15px,300px)';
-    restart.href = './index.html';
+    butt.href = "./index.html";
     
 }
