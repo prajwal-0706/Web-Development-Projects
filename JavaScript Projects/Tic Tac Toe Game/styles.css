@@ -2,12 +2,12 @@
     margin:  0px;
     padding: 0px;
     color: white;
+
 }
 
 body{
     height: 100%;
    overflow: hidden;
-   user-select: none;
 }
 
 img{
