@@ -28,3 +28,11 @@ body{
     width : 220px;
     transform: scaleX(-1);
 }
+
+#image{
+    position : absolute;
+}
+
+.img-container{
+    text-align: center;
+}
