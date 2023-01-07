@@ -1,78 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Teko', sans-serif;
-    font-size: 70px;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Teko", sans-serif;
+  font-size: 70px;
 }
 
-body{
-    background-color: black;
-    color: white;
-    /* overflow :hidden ; */
+body {
+  background-color: black;
+  color: white;
+  /* overflow :hidden ; */
 }
-.container{
-    /* position: relative; */
-    margin-top : 70px;
-}
-
-.image-1{
-    width : 300px;
-    transform: rotate(60deg);
+.container {
+  /* position: relative; */
+  margin-top: 70px;
 }
 
-.image-2{
-    width : 250px;
+.image-1 {
+  width: 300px;
+  transform: rotate(60deg);
 }
 
-.image-3{
-    width : 220px;
-    transform: scaleX(-1);
+.image-2 {
+  width: 250px;
 }
 
-#image{
-    position : absolute;
-    left: 200px;
-    top : 380px;
-    opacity : 0;
+.image-3 {
+  width: 220px;
+  transform: scaleX(-1);
 }
 
-.ComputerScore{
+#image {
+  position: absolute;
+  left: 200px;
+  top: 350px;
+  opacity: 0;
+}
+
+.ComputerScore {
   position: absolute;
   right: 160px;
-  font-size : 50px;
-
+  font-size: 50px;
 }
 
-.PlayerScore{
-    position: absolute;
-    left: 160px;
-    font-size : 50px;
+.PlayerScore {
+  position: absolute;
+  left: 160px;
+  font-size: 50px;
 }
 
-.Score{
-    margin :80px auto;
+.Score {
+  margin: 80px auto;
 }
 
-#image1{
-    position: absolute;
-    top : 380px;
-    right : 160px;
-    opacity: 0;
-
-}
+#image1 {
+  position: absolute;
   
-.imag-1{
-    width : 300px;
-    transform : scaleX(-1);
-    transform: rotate(60deg);
 }
 
-.imag-2{
-    width : 250px;
+.imag-1 {
+  width: 250px;
+  opacity: 0;
+  right: 250px;
+  top: 380px;
 }
 
-.imag-3{
-    width : 220px;
+.imag-2 {
+  width: 180px;
+  right: 250px;
+  opacity: 1;
+  transform: rotate(30deg);
+  top : 350px;
+}
+
+.imag-3 {
+  width: 220px;
+  opacity: 0;
+}
+
+/* Style for btn */
+
+.select-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30%;
+
+
+}
+
+.select-btn .btn-1 button {
+    padding: 0px 29px;
+    border-radius: 30px;
+    font-size: 50px;
+    cursor: pointer;
+
 }
