@@ -8,12 +8,11 @@
 }
 
 body {
-  background-color: black;
-  color: white;
-  /* overflow :hidden ; */
+  background-color: #001219;
+  color: #fff3b0;
+  overflow :hidden ;
 }
 .container {
-  /* position: relative; */
   margin-top: 70px;
 }
 
@@ -34,8 +33,8 @@ body {
 #image {
   position: absolute;
   left: 200px;
-  top: 350px;
-  opacity: 0;
+  top: 360px;
+  opacity: 1;
 }
 
 .ComputerScore {
@@ -61,22 +60,24 @@ body {
 
 .imag-1 {
   width: 250px;
-  opacity: 0;
   right: 250px;
-  top: 380px;
+  top: 360px;
+  opacity: 1;
 }
 
 .imag-2 {
   width: 180px;
   right: 250px;
-  opacity: 1;
   transform: rotate(30deg);
   top : 350px;
+  opacity: 1;
 }
 
 .imag-3 {
   width: 220px;
-  opacity: 0;
+  top: 360px;
+  right: 250px;
+  opacity: 1;
 }
 
 /* Style for btn */
@@ -85,7 +86,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 30%;
+  margin-top: 31%;
 
 
 }
@@ -95,5 +96,5 @@ body {
     border-radius: 30px;
     font-size: 50px;
     cursor: pointer;
-
+    background-color: #fff3b0;
 }
