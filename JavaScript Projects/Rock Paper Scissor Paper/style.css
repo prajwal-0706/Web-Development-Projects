@@ -6,3 +6,25 @@
     font-family: 'Teko', sans-serif;
     font-size: 70px;
 }
+
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    position: relative;
+}
+
+.image-1{
+    width : 300px;
+    transform: rotate(60deg);
+}
+
+.image-2{
+    width : 250px;
+}
+
+.image-3{
+    width : 220px;
+    transform: scaleX(-1);
+}
