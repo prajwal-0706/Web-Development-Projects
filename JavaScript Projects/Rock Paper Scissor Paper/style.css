@@ -10,9 +10,11 @@
 body{
     background-color: black;
     color: white;
+    overflow :hidden ;
 }
 .container{
-    position: relative;
+    /* position: relative; */
+    margin-top : 70px;
 }
 
 .image-1{
@@ -31,8 +33,26 @@ body{
 
 #image{
     position : absolute;
+    bottom: 0;
 }
 
-.img-container{
-    text-align: center;
+/* .img-container{
+    margin-left: 250px;
+} */
+
+.ComputerScore{
+  position: absolute;
+  right: 160px;
+  font-size : 50px;
+
+}
+
+.PlayerScore{
+    position: absolute;
+    left: 160px;
+    font-size : 50px;
+}
+
+.Score{
+    margin :80px auto;
 }
