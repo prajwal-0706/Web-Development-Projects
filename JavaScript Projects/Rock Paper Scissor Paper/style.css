@@ -10,7 +10,7 @@
 body{
     background-color: black;
     color: white;
-    overflow :hidden ;
+    /* overflow :hidden ; */
 }
 .container{
     /* position: relative; */
@@ -33,12 +33,10 @@ body{
 
 #image{
     position : absolute;
-    bottom: 0;
+    left: 200px;
+    top : 380px;
+    opacity : 0;
 }
-
-/* .img-container{
-    margin-left: 250px;
-} */
 
 .ComputerScore{
   position: absolute;
@@ -55,4 +53,26 @@ body{
 
 .Score{
     margin :80px auto;
+}
+
+#image1{
+    position: absolute;
+    top : 380px;
+    right : 160px;
+    opacity: 0;
+
+}
+  
+.imag-1{
+    width : 300px;
+    transform : scaleX(-1);
+    transform: rotate(60deg);
+}
+
+.imag-2{
+    width : 250px;
+}
+
+.imag-3{
+    width : 220px;
 }
