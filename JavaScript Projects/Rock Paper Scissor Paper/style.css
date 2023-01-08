@@ -93,10 +93,21 @@ body {
   margin-top: 31%;
 }
 
-.select-btn .btn-1 button {
+.btn-1, .btn-2, .btn-3 {
   padding: 0px 29px;
   border-radius: 30px;
+  border: none;
   font-size: 50px;
   cursor: pointer;
   background-color: #fff3b0;
+  transition : all 0.3s;
 }
+
+.btn-1:hover,
+.btn-2:hover, 
+.btn-3:hover{
+  background-color: #021d28;
+  color: #fff3b0;
+  box-shadow: 1px 1px 8px #fff3b0;
+}
+
