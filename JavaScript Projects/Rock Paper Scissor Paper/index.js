@@ -3,9 +3,9 @@ const img_1 = document.querySelector('.image-1');
 const img_2 = document.querySelector('.image-2');
 const img_3 = document.querySelector('.image-3');
 const button_1 = document.querySelectorAll('button'); 
-const Img_1 = document.querySelector('.imag-1');
-const Img_2 = document.querySelector('.imag-2');
-const Img_3 = document.querySelector('.imag-3');
+const Img_1 = document.querySelector('.imag-1');// Paper
+const Img_2 = document.querySelector('.imag-2'); // Scissor
+const Img_3 = document.querySelector('.imag-3'); // Rock
 const button = document.querySelector('.PlayerScore');
 const but = document.querySelector('.ComputerScore');
 let choice = '';
@@ -151,8 +151,42 @@ button_1.forEach((button) =>{
         choice = button.textContent;
         Dance();
         dance();
+        setTimeout(checkwin,2550);
     });
 });
 
+function checkwin(){
+    if(choice === no){
+        console.log("It's Tie");
+    }
+    // Player Win Conditons
 
+    if(choice === 'Paper' && no ==='Rock'){
+        console.log("Paper Beats Rock");
+        console.log("Player Won");
+    }
+    if(choice === 'Rock' && no === 'Scissor'){
+        console.log("Rock Beats Scissor");
+        console.log("Player Won");
+    }
+    if(choice === 'Scissor' && no === 'Paper'){
+        console.log("Scisssor Beats Paper");
+        console.log("Player Won");
+    }
+
+    // Computer Win Condtions
+
+    if(no === 'Paper' && choice ==='Rock'){
+        console.log("Paper Beats Rock");
+        console.log("Computer Won");
+    }
+    if(no === 'Rock' && choice === 'Scissor'){
+        console.log("Rock Beats Scissor");
+        console.log("Computer Won");
+    }
+    if(no === 'Scissor' && choice === 'Paper'){
+        console.log("Scisssor Beats Paper");
+        console.log(" Computer Won");
+    } 
+}
 
