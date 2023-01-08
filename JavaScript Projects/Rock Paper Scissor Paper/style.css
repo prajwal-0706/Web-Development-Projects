@@ -18,26 +18,24 @@ body {
 
 #image {
   position: absolute;
-  left: 200px;
-  
+  left: 200px; 
+  opacity: 0;
+
 }
 .image-1 {
   width: 300px;
   transform: rotate(60deg);
-  opacity: 0;
   top: 345px;
 }
 
 .image-2 {
   width: 250px;
-  opacity: 1;
   top: 385px;
 }
 
 .image-3 {
   width: 220px;
   transform: scaleX(-1);
-  opacity: 0;
   top: 350px;
 }
 
@@ -56,10 +54,13 @@ body {
 
 .Score {
   margin: 80px auto;
+  opacity: 0;
+  transition: all 0.6s;
 }
 
 #image1 {
   position: absolute;
+  opacity : 0;
 }
 
 .imag-1 {
@@ -67,7 +68,6 @@ body {
   right: 250px;
   transform: rotate(30deg);
   top: 340px;
-  opacity: 0;
   
 }
 
@@ -75,7 +75,6 @@ body {
   width: 250px;
   right: 250px;
   top: 380px;
-  opacity: 0;
 
 }
 
@@ -83,7 +82,7 @@ body {
   width: 220px;
   top: 360px;
   right: 250px;
-  opacity: 1;
+
 }
 
 /* Style for btn */
@@ -93,6 +92,8 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 31%;
+  opacity: 0;
+  transition: all 0.6s;
 }
 
 .btn-1, .btn-2, .btn-3 {
@@ -113,3 +114,29 @@ body {
   box-shadow: 1px 1px 8px #fff3b0;
 }
 
+.btn{
+  position: absolute;
+  padding: 0px 29px;
+  border-radius: 30px;
+  border: none;
+  font-size: 50px;
+  cursor: pointer;
+  background-color: #fff3b0;
+  transition : all 0.6s;
+  text-align: center;
+  top: 50%;
+  left: 44%;
+}
+.btn:hover{
+  background-color: #021d28;
+  color: #fff3b0;
+  box-shadow: 1px 1px 8px #fff3b0;
+}
+
+.result{
+  position: absolute;
+  top: 30%;
+  left: 500px;
+  opacity: 0;
+  transition: all 0.3s;
+}
