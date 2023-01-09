@@ -16,6 +16,10 @@ body {
   margin-top: 70px;
 }
 
+.container h1{
+  letter-spacing: 2px;
+}
+
 #image {
   position: absolute;
   left: 200px; 
@@ -117,7 +121,7 @@ body {
 .btn{
   position: absolute;
   padding: 0px 29px;
-  border-radius: 30px;
+  border-radius: 25px;
   border: none;
   font-size: 50px;
   cursor: pointer;
@@ -139,4 +143,5 @@ body {
   left: 500px;
   opacity: 0;
   transition: all 0.3s;
+  color: white;
 }
