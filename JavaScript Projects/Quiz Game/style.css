@@ -8,7 +8,7 @@
 body{
     font-family: 'Nunito', sans-serif;
     background: #161b33;
-    color: #edf2fb;
+    color: #fff;
 }
 
 h1{
@@ -35,6 +35,7 @@ h1{
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
     background: #f0f3bd;
+    transition : all 0.5s;
     
 
 }
@@ -60,6 +61,7 @@ h1{
  .by-level{
     left : 350px;
     top : 380px;
+
 
  }
 
