@@ -35,6 +35,7 @@ h1{
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
     background: #f0f3bd;
+    
 
 }
 
@@ -53,6 +54,7 @@ h1{
     font-family: 'Nunito', sans-serif;
     background: #f0f3bd;
     transition : all 0.5s;
+    opacity: 0;
  }
  
  .by-level{
