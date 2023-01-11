@@ -7,8 +7,8 @@
 
 body{
     font-family: 'Nunito', sans-serif;
-    background: linear-gradient(90deg, #131086, #b621f3);
-    color: #fff;
+    background: #161b33;
+    color: #edf2fb;
 }
 
 h1{
@@ -17,14 +17,16 @@ h1{
 }
 
 .container{
-    margin-top: 200px;
+    margin-top: 250px;
     margin-left: 90px;
     margin-right: 100px;
     height: 500px;
+    background-color : black;
+    border-radius : 25px;
 }
-.btn{
+.btn {
     position: absolute;
-     left: 45%;
+    left: 45%;
     bottom: 35%;
     padding: 10px 16px 10px 16px;
     border-radius: 12px;
@@ -32,10 +34,35 @@ h1{
     font-size: 25px;
     font-weight: 700;
     font-family: 'Nunito', sans-serif;
-    background: linear-gradient(45deg, #131086, #96829e);
+    background: #f0f3bd;
 
 }
 
-.btn:hover{
+.btn:hover, .accept button{
     cursor: pointer;
 }
+
+
+ .accept button{
+    position : absolute;
+    padding: 10px 16px 10px 16px;
+    border-radius: 12px;
+    border:none;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    background: #f0f3bd;
+    transition : all 0.5s;
+ }
+ 
+ .by-level{
+    left : 350px;
+    top : 380px;
+
+ }
+
+ .by-topic{
+    right : 350px;
+    top : 380px;
+
+ }
