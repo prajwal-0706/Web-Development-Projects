@@ -15,6 +15,7 @@ function Initial_Beginning (){
     document.querySelector('.by-level').style.transform = "translate(150px, 130px)";
     document.querySelector('.by-topic').style.opacity = 1;
     document.querySelector('.by-topic').style.transform = "translate(-150px, 130px)";
+
 }
 function disp(Element){
     Element.style.opacity = '1';
@@ -24,9 +25,7 @@ function Start_by_level(){
     document.querySelector('.by-level').style.opacity = '0';
     document.querySelector('.by-level').style.zIndex = -'1';
     document.querySelector('.by-topic').style.zIndex = -'1';
-    levels.forEach((Element) => {
-       setTimeout(disp(Element), 1500);
-    });
+    setTimeout(buildblocks, 1500);
 }
 
 levels.forEach((element) => {
@@ -34,19 +33,18 @@ levels.forEach((element) => {
         levels.forEach((e) => {
             e.style.opacity = '0';
             e.style.zIndex = '-1';
-        })
-    })
+        });
+    });
 })
 
 const delay = ms => new Promise( res => setTimeout(res, ms));
 
 const buildblocks = async () => {
-    for(let i = 0 ; i< 16 ; i++){
-        await delay(60);
+    for(let i = 0 ; i< 15 ; i++){
+        await delay(100);
         let div = document.createElement('div');
-
-        div.innerHTML = `Level ${i+1}`;
-        div.className = "level-1";
+        div.className = "level-content";
+        div.textContent = `Level ${i+1}`;
         document.getElementById('class').appendChild(div);
     }
 }
