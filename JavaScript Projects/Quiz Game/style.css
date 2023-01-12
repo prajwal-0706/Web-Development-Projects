@@ -12,31 +12,31 @@ body{
 }
 
 h1{
-    font-size: 90px;
-    display: inline-block;
+   font-size: 90px;
+   display: inline-block;
 }
 
 .container{
-    margin-top: 180px;
-    margin-left:200px;
-    margin-right: 190px;
-    height: 500px;
-    background-color : black;
-    border-radius : 25px;
+   margin-top: 180px;
+   margin-left:200px;
+   margin-right: 190px;
+   height: 500px;
+   background-color : black;
+   border-radius : 25px;
 }
 .btn {
-    position: absolute;
-    left: 45%;
-    bottom: 35%;
-    padding: 10px 16px 10px 16px;
-    border-radius: 12px;
-    border:none;
-    font-size: 25px;
-    font-weight: 700;
-    font-family: 'Nunito', sans-serif;
-    background: #f0f3bd;
-    transition : all 0.5s;
-    z-index: 1;
+   position: absolute;
+   left: 45%;
+   bottom: 35%;
+   padding: 10px 16px 10px 16px;
+   border-radius: 12px;
+   border:none;
+   font-size: 25px;
+   font-weight: 700;
+   font-family: 'Nunito', sans-serif;
+   background: #f0f3bd;
+   transition : all 0.5s;
+   z-index: 1;
     
 
 }
@@ -47,17 +47,17 @@ h1{
 
 
  .accept button{
-    position : absolute;
-    padding: 10px 16px 10px 16px;
-    border-radius: 12px;
-    border:none;
-    font-size: 25px;
-    font-weight: 700;
-    font-family: 'Nunito', sans-serif;
-    background: #f0f3bd;
-    transition : all 0.5s;
-    opacity: 0;
-    z-index: 1;
+   position : absolute;
+   padding: 10px 16px 10px 16px;
+   border-radius: 12px;
+   border:none;
+   font-size: 25px;
+   font-weight: 700;
+   font-family: 'Nunito', sans-serif;
+   background: #f0f3bd;
+   transition : all 0.5s;
+   opacity: 0;
+   z-index: 1;
  }
  
  .by-level{
@@ -68,31 +68,32 @@ h1{
  }
 
  .by-topic{
-    right : 350px;
-    top : 380px;
+   right : 350px;
+   top : 380px;
 
  }
 
  .level-content{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: sapce-evenly;
-    margin-top: 35px;
-    margin: 35px 30px 35px 30px;
-    gap: 2.5rem;
-    flex-wrap: wrap;
-    z-index: -1;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: sapce-evenly;
+   margin-top: 35px;
+   margin: 35px 30px 35px 30px;
+   gap: 2.5rem;
+   flex-wrap: wrap;
+   z-index: -1;
  }
 
  .level-content div {
-    background-color: green;
-    font-size: 20px;
-    padding: 20px 17px 20px 17px;
-    border-radius: 15px;
-    opacity: 0;
-    transition: all 0.5s;
+   background-color: green;
+   font-size: 20px;
+   padding: 20px 17px 20px 17px;
+   border-radius: 15px;
+   opacity: 0;
+   transition: all 0.5s;
  }
 
  .level-content div:hover{
-    cursor: pointer;
+   cursor: pointer;
+   background-color: red;
  }
