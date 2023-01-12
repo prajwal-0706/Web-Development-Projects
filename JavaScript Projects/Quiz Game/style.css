@@ -9,20 +9,22 @@ body{
     font-family: 'Nunito', sans-serif;
     background: #001219;
     color: #fff;
+    /* overflow: hidden; */
 }
 
 h1{
    font-size: 90px;
-   display: inline-block;
+   top: 0;
+   position: absolute;
 }
 
-.container{
+/* .container{
    margin-top: 140px;
    margin-left:200px;
    margin-right: 190px;
    height: 500px;
    border-radius : 25px;
-}
+} */
 .btn {
    position: absolute;
    left: 45%;
@@ -100,4 +102,13 @@ h1{
 
  .levels{
    margin-top: 80px;
+   position: absolute;
+   z-index: 1;
  }
+
+.myVideo{
+  width: 100%;
+  position: absolute;
+  left: 0px;
+}
+

@@ -45,7 +45,7 @@ const buildblocks = async () => {
         await delay(100);
         let div = document.createElement('div');
         div.className = "level-content";
-        if( i < 10){
+        if( i < 9){
             div.textContent = `Level 0${i+1}`;
         }else{
             div.textContent = `Level ${i+1}`;
