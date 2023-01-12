@@ -7,7 +7,7 @@
 
 body{
     font-family: 'Nunito', sans-serif;
-    background: #161b33;
+    background: #001219;
     color: #fff;
 }
 
@@ -17,11 +17,10 @@ h1{
 }
 
 .container{
-   margin-top: 180px;
+   margin-top: 140px;
    margin-left:200px;
    margin-right: 190px;
    height: 500px;
-   background-color : black;
    border-radius : 25px;
 }
 .btn {
@@ -86,7 +85,7 @@ h1{
  }
 
  .level-content div {
-   background-color: green;
+   background-color: #ef476f;
    font-size: 20px;
    padding: 20px 17px 20px 17px;
    border-radius: 15px;
@@ -100,5 +99,5 @@ h1{
  }
 
  .levels{
-   margin-top: 35px;
+   margin-top: 80px;
  }

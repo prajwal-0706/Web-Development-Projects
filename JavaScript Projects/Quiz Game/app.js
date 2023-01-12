@@ -2,6 +2,7 @@ const Level = document.querySelector('.by-level');
 const Topic = document.querySelector('.by-topic');
 const Start = document.querySelector('.btn');
 const levels = document.querySelectorAll('.level-1');
+let lev;
 
 
 Start.addEventListener('click', Initial_Beginning)
@@ -44,8 +45,26 @@ const buildblocks = async () => {
         await delay(100);
         let div = document.createElement('div');
         div.className = "level-content";
-        div.textContent = `Level ${i+1}`;
-        document.getElementById('class').appendChild(div);
+        if( i < 10){
+            div.textContent = `Level 0${i+1}`;
+        }else{
+            div.textContent = `Level ${i+1}`;
+        }
+
+        document.getElementById('class').appendChild(div);    
     }
+    lev = document.querySelectorAll('.level-content');
+    lev.forEach((ele) =>{
+        ele.addEventListener('click', () =>{
+            clear(ele);
+        });
+    })
+}
+
+
+function clear(element){
+    element.style.opacity = '0';
+    element.style.zIndex = '-1';
+
 }
 
