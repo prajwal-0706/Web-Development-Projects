@@ -17,7 +17,7 @@ h1{
   top: 300px;
   position: absolute;
   left: 400px;
-  /* transform: translate(0px, -100px); */
+  transition: all 0.5s;
 }
 
 

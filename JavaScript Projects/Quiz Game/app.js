@@ -2,6 +2,7 @@ const Level = document.querySelector('.by-level');
 const Topic = document.querySelector('.by-topic');
 const Start = document.querySelector('.btn');
 const levels = document.querySelectorAll('.level-1');
+const heading = document.querySelector('.head');
 let lev;
 
 
@@ -25,7 +26,7 @@ function Start_by_level(){
     document.querySelector('.by-topic').style.opacity = '0';
     document.querySelector('.by-level').style.opacity = '0';
     document.querySelector('.by-level').style.zIndex = -'1';
-    document.querySelector('.by-topic').style.zIndex = -'1';
+    document.querySelector('.by-topic').style.zIndex = -'1';    
     setTimeout(buildblocks, 1500);
 }
 
@@ -41,8 +42,9 @@ levels.forEach((element) => {
 const delay = ms => new Promise( res => setTimeout(res, ms));
 
 const buildblocks = async () => {
+    heading.style.transform = 'translate(0px, -100px)';
     for(let i = 0 ; i< 14 ; i++){
-        await delay(100);
+        await delay(50);
         let div = document.createElement('div');
         div.className = "level-content";
         if( i < 9){
