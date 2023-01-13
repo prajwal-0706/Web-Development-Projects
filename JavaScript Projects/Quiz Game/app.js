@@ -13,9 +13,9 @@ function Initial_Beginning (){
     document.querySelector('.btn').style.opacity = 0;
     document.querySelector('.btn').style.zIndex = -1;
     document.querySelector('.by-level').style.opacity = 1;
-    document.querySelector('.by-level').style.transform = "translate(150px, 130px)";
+    document.querySelector('.by-level').style.transform = "translate(200px, 130px)";
     document.querySelector('.by-topic').style.opacity = 1;
-    document.querySelector('.by-topic').style.transform = "translate(-150px, 130px)";
+    document.querySelector('.by-topic').style.transform = "translate(-250px, 130px)";
 
 }
 function disp(Element){
@@ -41,7 +41,7 @@ levels.forEach((element) => {
 const delay = ms => new Promise( res => setTimeout(res, ms));
 
 const buildblocks = async () => {
-    for(let i = 0 ; i< 15 ; i++){
+    for(let i = 0 ; i< 14 ; i++){
         await delay(100);
         let div = document.createElement('div');
         div.className = "level-content";
