@@ -9,7 +9,7 @@ body{
   font-family: 'Nunito', sans-serif;
   background: #001219;
   color: #fff;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 h1{
@@ -83,7 +83,8 @@ h1{
   transition: all 0.5s;
 }
 
- .level-content div {
+
+.level-content div {
   background-color: #219ebc;
   font-size: 20px;
   padding: 20px 17px 20px 17px;
@@ -92,17 +93,17 @@ h1{
   transition: all 0.5s;
  }
 
- .level-content div:hover{
+.level-content div:hover{
   cursor: pointer;
   background-color: #003566;
  }
 
- .levels{
+.levels{
   margin-top: 80px;
   position: absolute;
   top: 280px;
   z-index: 1;
- }
+}
 
 .myVideo{
   width: 100%;
@@ -114,44 +115,79 @@ h1{
   color-scheme: white;
   z-index: 1;
   position: absolute;
-  /* left: 50%; */
-  top: 50%;
-  width: 50%;
-
+  top: 320px;
+  width: 230px;
   height: 0;
   background-color: white;
-  transform: rotate(120deg);
 }
-.hexa{
-  rotate:90deg;
+.line-1{
+  right: 0px;
 }
 
 .box{
   position: absolute;
   z-index: 1;
+  margin-top: 90px;
 }
 
 .box-1{
-  left: 50%;
+  top: 66.59px;
+  right: 632px;
   width: 0;
   border-bottom: 30px solid #6C6;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
+  rotate: 90deg;
+
 }
 
 .box-2{
-  width: 104px;
-  left: 50%;
-  top: 30px;
-  height: 60px;
+  width: 900px;
+  height: 104px;
+  left: 325px;
+  top: 100px;
   background-color: #6C6;
 }
 
 .box-3{
   width: 0;
-  left: 50%;
-  top: 90px;
-  border-top: 30px solid #6C6;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
+  left: 250px;
+  top: 139px;
+  border-top: 20px solid purple;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  rotate: 90deg;
+}
+
+img{
+  position: absolute;
+  z-index: 1;
+  width: 70%;
+  left: 230px;
+  top: 250px;
+
+}
+
+.ans-container{
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  position: absolute;
+  font-size: 25px;
+  width: 60%;
+  margin-left: 380px;
+  margin-top: 500px;
+
+
+}
+
+.ans-row-1{
+  display: flex;
+  flex-direction: row;
+  gap: 25rem;
+}
+.ans-row-2{
+  display: flex;
+  flex-direction: row;
+  gap: 25rem;
 }
