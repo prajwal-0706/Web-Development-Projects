@@ -12,7 +12,7 @@ body{
   overflow: hidden;
 }
 
-h1{
+.heading h1{
   font-size: 90px;
   top: 300px;
   position: absolute;
@@ -165,7 +165,6 @@ img{
   width: 70%;
   left: 230px;
   top: 250px;
-
 }
 
 .ans-container{
@@ -190,4 +189,34 @@ img{
   display: flex;
   flex-direction: row;
   gap: 25rem;
+}
+
+.display-question{
+  position: absolute;
+  left: 19%;
+  top: 37%;
+  color: white;
+  z-index: 1;
+  font-size: 40px;
+}
+
+.typewriter {
+  color: #fff;
+  overflow: hidden;
+  border-right: .15em solid orange; 
+  white-space: nowrap;
+  
+  animation: 
+    typing 5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 900px }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
