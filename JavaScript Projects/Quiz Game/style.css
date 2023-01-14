@@ -109,3 +109,15 @@ h1{
   left: 0px;
 }
 
+.line{
+  color-scheme: white;
+  z-index: 1;
+  position: absolute;
+  /* left: 50%; */
+  top: 50%;
+  width: 50%;
+
+  height: 0;
+  background-color: white;
+  transform: rotate(120deg);
+}
