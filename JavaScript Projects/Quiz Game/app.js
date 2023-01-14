@@ -59,13 +59,31 @@ const buildblocks = async () => {
     lev.forEach((ele) =>{
         ele.addEventListener('click', () =>{
             clear(ele);
+            Displayque();
+
         });
     })
 }
 
+function Displayque(){
+    document.querySelector('img').style.opacity = '1';
+    document.querySelector('img').style.zIndex = '1';
+    document.querySelectorAll('.line').forEach((e) => {
+        e.style.opacity = '1';
+        e.style.zIndex = '1';
+        e.style.animationName  = 'lineDesign';
+    });
+    document.querySelector('.ans-container').style.opacity = '1';
+    heading.style.transform = 'translate(0px, -190px)';
+    document.querySelector('.display-question').style.opacity = '1';
+    document.querySelector('.display-question').style.zIndex = '1';
+    document.querySelector('.display-question').style.animation = 'typing 5s steps(30, end), blink-caret .5s step-end infinite'
+
+}
 
 function clear(element){
     element.style.opacity = '0';
     element.style.zIndex = '-1';
 
 }
+

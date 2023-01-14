@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  transition: all 0.5s;
   padding: 0;
 }
 
@@ -18,7 +19,8 @@ body{
   position: absolute;
   left: 400px;
   transition: all 0.5s;
-  opacity: 0;
+  z-index: 1;
+  /* transform: translate(0px, -170px); */
 }
 
 
@@ -109,6 +111,7 @@ body{
   width: 100%;
   position: absolute;
   left: 0px;
+  z-index: -1;
 }
 
 .line{
@@ -119,6 +122,8 @@ body{
   width: 230px;
   height: 0;
   background-color: white;
+  animation-duration: 3s;
+  opacity: 0;
 }
 .line-1{
   right: 0px;
@@ -165,6 +170,9 @@ img{
   width: 70%;
   left: 230px;
   top: 250px;
+  opacity:0;
+  z-index: -1;
+  transition: all 0.5s;
 }
 
 .ans-container{
@@ -176,7 +184,9 @@ img{
   width: 60%;
   margin-left: 380px;
   margin-top: 500px;
-
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
 
 }
 
@@ -198,6 +208,8 @@ img{
   color: white;
   z-index: 1;
   font-size: 40px;
+  opacity: 0;
+  z-index: -1;
 }
 
 .typewriter {
@@ -205,15 +217,15 @@ img{
   overflow: hidden;
   border-right: .15em solid orange; 
   white-space: nowrap;
-  
-  animation: 
-    typing 5s steps(30, end),
-    blink-caret .5s step-end infinite;
 }
 
 @keyframes typing {
   from { width: 0 }
   to { width: 900px }
+}
+@keyframes lineDesign {
+  from { width: 0 }
+  to { width: 230px }
 }
 
 @keyframes blink-caret {
