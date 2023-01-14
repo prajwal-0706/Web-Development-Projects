@@ -9,7 +9,7 @@ body{
   font-family: 'Nunito', sans-serif;
   background: #001219;
   color: #fff;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 h1{
@@ -18,6 +18,7 @@ h1{
   position: absolute;
   left: 400px;
   transition: all 0.5s;
+  opacity: 0;
 }
 
 
@@ -64,13 +65,13 @@ h1{
 
  }
 
- .by-topic{
+.by-topic{
   right : 350px;
   top : 380px;
 
- }
+}
 
- .level-content{
+.level-content{
   display: flex;
   justify-content: space-evenly;
   align-items: sapce-evenly;
@@ -80,7 +81,7 @@ h1{
   flex-wrap: wrap;
   z-index: 1;
   transition: all 0.5s;
- }
+}
 
  .level-content div {
   background-color: #219ebc;
@@ -120,4 +121,37 @@ h1{
   height: 0;
   background-color: white;
   transform: rotate(120deg);
+}
+.hexa{
+  rotate:90deg;
+}
+
+.box{
+  position: absolute;
+  z-index: 1;
+}
+
+.box-1{
+  left: 50%;
+  width: 0;
+  border-bottom: 30px solid #6C6;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.box-2{
+  width: 104px;
+  left: 50%;
+  top: 30px;
+  height: 60px;
+  background-color: #6C6;
+}
+
+.box-3{
+  width: 0;
+  left: 50%;
+  top: 90px;
+  border-top: 30px solid #6C6;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
 }

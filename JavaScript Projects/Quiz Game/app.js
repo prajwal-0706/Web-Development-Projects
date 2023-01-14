@@ -69,4 +69,3 @@ function clear(element){
     element.style.zIndex = '-1';
 
 }
-
