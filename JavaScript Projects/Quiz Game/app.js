@@ -77,7 +77,8 @@ function Displayque(){
     heading.style.transform = 'translate(0px, -190px)';
     document.querySelector('.display-question').style.opacity = '1';
     document.querySelector('.display-question').style.zIndex = '1';
-    document.querySelector('.display-question').style.animation = 'typing 5s steps(30, end), blink-caret .5s step-end infinite'
+    document.querySelector('.display-question').style.animation = 'typing 5s steps(30, end), blink-caret .5s step-end infinite';
+    setTimeout( "document.querySelector('.display-question').style.borderRight = 'none'", 5500);
 
 }
 

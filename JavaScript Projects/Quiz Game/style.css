@@ -17,7 +17,7 @@ body{
   font-size: 90px;
   top: 300px;
   position: absolute;
-  left: 400px;
+  left: 420px;
   transition: all 0.5s;
   z-index: 1;
   /* transform: translate(0px, -170px); */
@@ -26,8 +26,8 @@ body{
 
 .btn {
   position: absolute;
-  left: 45%;
-  bottom: 35%;
+  left: 680px;
+  bottom: 250px;
   padding: 10px 16px 10px 16px;
   border-radius: 12px;
   border:none;
@@ -203,8 +203,8 @@ img{
 
 .display-question{
   position: absolute;
-  left: 19%;
-  top: 37%;
+  left: 285px;
+  top: 290px;
   color: white;
   z-index: 1;
   font-size: 40px;
