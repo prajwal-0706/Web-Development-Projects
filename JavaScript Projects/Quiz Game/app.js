@@ -121,11 +121,11 @@ const buildblocks = async () => {
     lev = document.querySelectorAll('.level-content');
 
     lev.forEach((ele) =>{
+        ele.style.zIndex = '-4';
         ele.addEventListener('click', () =>{
             clear(ele);
             Displayque();
             Displayquestion();
-            // changeOpt();
 
         });
     })
@@ -140,11 +140,11 @@ function Displayque(){
         e.style.zIndex = '1';
         e.style.animationName  = 'lineDesign';
     });
-    document.querySelector('.ans-container').style.opacity = '1';
-    
+    document.querySelector('.ans-container').style.opacity = '1'; 
     heading.style.transform = 'translate(0px, -190px)';
     document.querySelector('.display-question').style.opacity = '1';
-    document.querySelector('.display-question').style.zIndex = '1';
+    document.querySelector('.display-Question-div').style.opacity = '1';
+    document.querySelector('.display-question').style.zIndex = '10';
     document.querySelector('.display-question').style.animation = 'typing 5s steps(30, end), blink-caret .5s step-end infinite';
     setTimeout( "document.querySelector('.display-question').style.borderRight = 'none'", 5500);
 
@@ -155,7 +155,10 @@ function Displayquestion(){
     let Opt = Questions[0].option_A;
     console.log(Opt);
     questionTab.textContent = Questions[`${i}`].Question;
-    opt_1.innerHTML = Questions[1].option_A;
+    document.querySelector('.Option-1').innerHTML = Questions[`${i}`].option_A;
+    document.querySelector('.Option-2').innerHTML = Questions[`${i}`].option_C;
+    document.querySelector('.Option-3').innerHTML = Questions[`${i}`].option_D;
+    document.querySelector('.Option-4').innerHTML = Questions[`${i}`].option_B;
     
 }
 
