@@ -153,7 +153,6 @@ function Displayque(){
 function Displayquestion(){
     let i = 0;
     let Opt = Questions[0].option_A;
-    console.log(Opt);
     questionTab.textContent = Questions[`${i}`].Question;
     document.querySelector('.Option-1').innerHTML = Questions[`${i}`].option_A;
     document.querySelector('.Option-2').innerHTML = Questions[`${i}`].option_C;

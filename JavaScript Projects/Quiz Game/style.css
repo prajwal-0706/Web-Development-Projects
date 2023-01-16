@@ -99,7 +99,7 @@ body{
 }
 
 .myVideo{
-  width: 100%;
+  width: 100% !important;
   position: absolute;
   left: 0px;
   z-index: -1;
