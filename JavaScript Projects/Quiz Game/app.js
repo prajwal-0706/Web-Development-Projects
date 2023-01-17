@@ -126,7 +126,6 @@ const buildblocks = async () => {
             clear(ele);
             Displayque();
             Displayquestion();
-
         });
     })
 }
@@ -146,8 +145,17 @@ function Displayque(){
     document.querySelector('.display-Question-div').style.opacity = '1';
     document.querySelector('.display-question').style.zIndex = '10';
     document.querySelector('.display-question').style.animation = 'typing 5s steps(30, end), blink-caret .5s step-end infinite';
-    setTimeout( "document.querySelector('.display-question').style.borderRight = 'none'", 5500);
+    setTimeout( Disp, 5500);
+    
 
+}
+
+const Disp = () =>{
+    document.querySelector('.prev').style.opacity = '1';
+    document.querySelector('.next').style.opacity = '1';
+    document.querySelector('.next').style.zIndex = '10';
+    document.querySelector('.prev').style.zIndex = '10';
+    document.querySelector('.display-question').style.borderRight = 'none';
 }
 
 function Displayquestion(){
