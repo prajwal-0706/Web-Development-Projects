@@ -137,6 +137,12 @@ const buildblocks = async () => {
 }
 
 const nextque = () => {
+    if(i < 0){
+        i = 0;
+    }
+    if(i > 4){
+        i = 4;
+    }
     i++;
     document.querySelector('.display-question').style.borderRight = '.15em solid orange';
     Displayque();
@@ -144,6 +150,12 @@ const nextque = () => {
 };
 
 const prevque = () => {
+    if(i < 0){
+        i = 0;
+    }
+    if(i > 4){
+        i = 4;
+    }
     i--;
     document.querySelector('.display-question').style.borderRight = '.15em solid orange';
     Displayque();
