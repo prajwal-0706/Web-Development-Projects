@@ -4,11 +4,13 @@ const Start = document.querySelector('.btn');
 const levels = document.querySelectorAll('.level-1');
 const heading = document.querySelector('.head');
 const questionTab = document.querySelector('.display-question');
-let opt_1 = document.querySelector('.option-1');
+const opt_1 = document.querySelector('.option-1');
 const opt_2 = document.querySelector('.option-2');
 const opt_3 = document.querySelector('.option-3');
 const opt_4 = document.querySelector('.option-4');
-
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+let i = 0;
 let lev;
 
 const Questions = [
@@ -26,7 +28,7 @@ const Questions = [
         option_A : 'Hardware',
         option_B : 'Software',
         option_C : 'Software Instructions',
-        option_D : 'Systwm Software',
+        option_D : 'System Software',
         Answer : 'Software',
     },
 
@@ -125,11 +127,28 @@ const buildblocks = async () => {
         ele.addEventListener('click', () =>{
             clear(ele);
             Displayque();
+            next.addEventListener('click', nextque);
+            prev.addEventListener('click', prevque);        
             Displayquestion();
+            
+
         });
     })
 }
 
+const nextque = () => {
+    i++;
+    document.querySelector('.display-question').style.borderRight = '.15em solid orange';
+    Displayque();
+    Displayquestion();
+};
+
+const prevque = () => {
+    i--;
+    document.querySelector('.display-question').style.borderRight = '.15em solid orange';
+    Displayque();
+    Displayquestion();
+};
 
 function Displayque(){
     document.querySelector('img').style.opacity = '1';
@@ -146,7 +165,6 @@ function Displayque(){
     document.querySelector('.display-question').style.zIndex = '10';
     document.querySelector('.display-question').style.animation = 'typing 5s steps(30, end), blink-caret .5s step-end infinite';
     setTimeout( Disp, 5500);
-    
 
 }
 
@@ -155,12 +173,11 @@ const Disp = () =>{
     document.querySelector('.next').style.opacity = '1';
     document.querySelector('.next').style.zIndex = '10';
     document.querySelector('.prev').style.zIndex = '10';
+    document.querySelector('.display-question').style.animation = 'none';
     document.querySelector('.display-question').style.borderRight = 'none';
 }
 
 function Displayquestion(){
-    let i = 0;
-    let Opt = Questions[0].option_A;
     questionTab.textContent = Questions[`${i}`].Question;
     document.querySelector('.Option-1').innerHTML = Questions[`${i}`].option_A;
     document.querySelector('.Option-2').innerHTML = Questions[`${i}`].option_C;
