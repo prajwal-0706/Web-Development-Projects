@@ -125,15 +125,31 @@ const buildblocks = async () => {
     lev.forEach((ele) =>{
         ele.style.zIndex = '-4';
         ele.addEventListener('click', () =>{
+
             clear(ele);
             Displayque();
             next.addEventListener('click', nextque);
             prev.addEventListener('click', prevque);        
             Displayquestion();
+            checkAns();
             
-
         });
     })
+}
+
+const checkAns = () => {
+    document.querySelector('.Option-1').addEventListener('click', () => {
+        document.querySelector('.Option-1').textContent === Questions[`${i}`].Answer ? console.log("sdfgsdfg") : console.log("false");
+    });
+    document.querySelector('.Option-2').addEventListener('click', () => {
+        document.querySelector('.Option-2').textContent === Questions[`${i}`].Answer ? console.log("sdfgsdfg") : console.log("false");
+    });
+    document.querySelector('.Option-3').addEventListener('click', () => {
+        document.querySelector('.Option-3').textContent === Questions[`${i}`].Answer ? console.log("sdfgsdfg") : console.log("false");
+    });
+    document.querySelector('.Option-4').addEventListener('click', () => {
+        document.querySelector('.Option-4').textContent === Questions[`${i}`].Answer ? console.log("sdfgsdfg") : console.log("false");
+    });
 }
 
 const nextque = () => {
@@ -194,8 +210,7 @@ function Displayquestion(){
     document.querySelector('.Option-1').innerHTML = Questions[`${i}`].option_A;
     document.querySelector('.Option-2').innerHTML = Questions[`${i}`].option_C;
     document.querySelector('.Option-3').innerHTML = Questions[`${i}`].option_D;
-    document.querySelector('.Option-4').innerHTML = Questions[`${i}`].option_B;
-    
+    document.querySelector('.Option-4').innerHTML = Questions[`${i}`].option_B; 
 }
 
 function clear(element){
