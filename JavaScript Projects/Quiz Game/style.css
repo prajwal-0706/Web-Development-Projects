@@ -236,3 +236,28 @@ img{
   transform: scale(1.2);
   cursor: pointer;
 }
+
+.progress {
+  margin: 50px auto;
+  padding: 2px;
+  width: 100%;
+  max-width: 850px;
+  border: 3px solid #05e35e;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.progress .progress__bar {
+  height: 100%;
+  width: 50%;
+  margin-left: 0px;
+  background-color: #05e35e;
+  /* animation: fill-bar 3s 1; */
+  border-radius: 20px;
+}
+
+/* @keyframes fill-bar {
+  from {width: 0%;}
+  to {width: 100%;}
+} */
+
