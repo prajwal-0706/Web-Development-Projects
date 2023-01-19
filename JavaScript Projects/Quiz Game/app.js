@@ -139,16 +139,32 @@ const buildblocks = async () => {
 
 const checkAns = () => {
     document.querySelector('.Option-1').addEventListener('click', () => {
-        document.querySelector('.Option-1').textContent === Questions[`${i}`].Answer ? console.log("sdfgsdfg") : console.log("false");
+        document.querySelector('.Option-1').textContent === Questions[`${i}`].Answer ? alert(
+            "Correct Answer !!!!"
+        ) : alert(
+            "Wrong Answer....Try Again !!!!"
+        );
     });
     document.querySelector('.Option-2').addEventListener('click', () => {
-        document.querySelector('.Option-2').textContent === Questions[`${i}`].Answer ? console.log("sdfgsdfg") : console.log("false");
+        document.querySelector('.Option-2').textContent === Questions[`${i}`].Answer ? alert(
+            "Correct Answer !!!!"
+        ) : alert(
+            "Wrong Answer....Try Again !!!!"
+        );
     });
     document.querySelector('.Option-3').addEventListener('click', () => {
-        document.querySelector('.Option-3').textContent === Questions[`${i}`].Answer ? console.log("sdfgsdfg") : console.log("false");
+        document.querySelector('.Option-3').textContent === Questions[`${i}`].Answer ? alert(
+            "Correct Answer !!!!"
+        ) : alert(
+            "Wrong Answer....Try Again !!!!"
+        );
     });
     document.querySelector('.Option-4').addEventListener('click', () => {
-        document.querySelector('.Option-4').textContent === Questions[`${i}`].Answer ? console.log("sdfgsdfg") : console.log("false");
+        document.querySelector('.Option-4').textContent === Questions[`${i}`].Answer ? alert(
+            "Correct Answer !!!!"
+        ) : alert(
+            "Wrong Answer....Try Again !!!!"
+        );
     });
 }
 
