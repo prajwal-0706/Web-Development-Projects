@@ -138,6 +138,11 @@ const buildblocks = async () => {
         });
     })
 }
+var k = 0;
+
+function setProgress(value) {
+	document.getElementById("progress__bar").setAttribute("style","width: " +value+ "%");	
+}
 
 const checkAns = () => {
     document.querySelector('.Option-1').addEventListener('click', () => {
@@ -146,9 +151,14 @@ const checkAns = () => {
         ) : alert(
             "Wrong Answer....Try Again !!!!"
         );
-        let pr = rs.getPropertyValue('--x');
-        pr = pr + 108;
-        r.style.setProperty('--x', pr);
+        if(k===100){
+            alert("Bss Kr Pagle kitna Krega.....");
+            k = 0;
+        }
+        else{
+            k+=20;
+        }
+        setProgress(k);
     });
     document.querySelector('.Option-2').addEventListener('click', () => {
         document.querySelector('.Option-2').textContent === Questions[`${i}`].Answer ? alert(
@@ -156,6 +166,14 @@ const checkAns = () => {
         ) : alert(
             "Wrong Answer....Try Again !!!!"
         );
+        if(k===100){
+            alert("Bss Kr Pagle kitna Krega.....");
+            k = 0;
+        }
+        else{
+            k+=20;
+        }
+        setProgress(k);
     });
     document.querySelector('.Option-3').addEventListener('click', () => {
         document.querySelector('.Option-3').textContent === Questions[`${i}`].Answer ? alert(
@@ -163,6 +181,14 @@ const checkAns = () => {
         ) : alert(
             "Wrong Answer....Try Again !!!!"
         );
+        if(k===100){
+            alert("Bss Kr Pagle kitna Krega.....");
+            k = 0;
+        }
+        else{
+            k+=20;
+        }
+        setProgress(k);
     });
     document.querySelector('.Option-4').addEventListener('click', () => {
         document.querySelector('.Option-4').textContent === Questions[`${i}`].Answer ? alert(
@@ -170,6 +196,14 @@ const checkAns = () => {
         ) : alert(
             "Wrong Answer....Try Again !!!!"
         );
+        if(k===100){
+            alert("Bss Kr Pagle kitna Krega.....");
+            k = 0;
+        }
+        else{
+            k+=20;
+        }
+        setProgress(k);
     });
 }
 

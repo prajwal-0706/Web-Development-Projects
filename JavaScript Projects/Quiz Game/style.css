@@ -246,18 +246,14 @@ img{
   height: 25px;
   border-radius: 20px;
   transform: translate(10px,360px);
+  overflow: hidden;
 }
 
 .progress .progress__bar { 
   height: 100%;
-  width: var(--x);
+  width: 0%;
   margin-left: 0px;
   background-color: #05e35e;
   /* animation: fill-bar 3s 1; */
   border-radius: 20px;
-}
-
-:root {
-  --x: 0px;
-
 }
