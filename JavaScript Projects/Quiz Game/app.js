@@ -146,62 +146,91 @@ function setProgress(value) {
 
 const checkAns = () => {
     document.querySelector('.Option-1').addEventListener('click', () => {
-        document.querySelector('.Option-1').textContent === Questions[`${i}`].Answer ? alert(
-            "Correct Answer !!!!"
-        ) : alert(
-            "Wrong Answer....Try Again !!!!"
-        );
-        if(k===100){
-            alert("Bss Kr Pagle kitna Krega.....");
-            k = 0;
+        if( document.querySelector('.Option-1').textContent === Questions[`${i}`].Answer){
+            alert(
+                "Correct Answer !!!!"
+            );
+            if(k===100){
+                alert("Bss Kr Pagle kitna Krega.....");
+                k = 0;
+            }
+            else{
+                k+=20;
+            }
+            i++;
+            setTimeout(nextque, 500);
         }
         else{
-            k+=20;
-        }
+            alert(
+                "Wrong Answer....Try Again !!!!"
+            );
+        } 
+        
         setProgress(k);
     });
     document.querySelector('.Option-2').addEventListener('click', () => {
-        document.querySelector('.Option-2').textContent === Questions[`${i}`].Answer ? alert(
-            "Correct Answer !!!!"
-        ) : alert(
-            "Wrong Answer....Try Again !!!!"
-        );
-        if(k===100){
-            alert("Bss Kr Pagle kitna Krega.....");
-            k = 0;
+        if( document.querySelector('.Option-2').textContent === Questions[`${i}`].Answer){
+            alert(
+                "Correct Answer !!!!"
+            );
+            if(k===100){
+                alert("Bss Kr Pagle kitna Krega.....");
+                k = 0;
+            }
+            else{
+                k+=20;
+            }
+            i++;
+            setTimeout(nextque, 500);
         }
         else{
-            k+=20;
+            alert(
+                "Wrong Answer....Try Again !!!!"
+            );
         }
         setProgress(k);
     });
     document.querySelector('.Option-3').addEventListener('click', () => {
-        document.querySelector('.Option-3').textContent === Questions[`${i}`].Answer ? alert(
-            "Correct Answer !!!!"
-        ) : alert(
-            "Wrong Answer....Try Again !!!!"
-        );
-        if(k===100){
-            alert("Bss Kr Pagle kitna Krega.....");
-            k = 0;
+        if( document.querySelector('.Option-3').textContent === Questions[`${i}`].Answer){
+            alert(
+                "Correct Answer !!!!"
+            );
+            if(k===100){
+                alert("Bss Kr Pagle kitna Krega.....");
+                k = 0;
+            }
+            else{
+                k+=20;
+            }
+            i++;
+            setTimeout(nextque, 500);
         }
         else{
-            k+=20;
+            alert(
+                "Wrong Answer....Try Again !!!!"
+            );
         }
         setProgress(k);
     });
     document.querySelector('.Option-4').addEventListener('click', () => {
-        document.querySelector('.Option-4').textContent === Questions[`${i}`].Answer ? alert(
-            "Correct Answer !!!!"
-        ) : alert(
-            "Wrong Answer....Try Again !!!!"
-        );
-        if(k===100){
-            alert("Bss Kr Pagle kitna Krega.....");
-            k = 0;
+        if( document.querySelector('.Option-4').textContent === Questions[`${i}`].Answer){
+            alert(
+                "Correct Answer !!!!"
+            );
+            if(k===100){
+                alert("Bss Kr Pagle kitna Krega.....");
+                k = 0;
+            }
+            else{
+                k+=20;
+            }
+            i++;
+            setTimeout(nextque, 500);
         }
         else{
-            k+=20;
+            alert(
+                "Wrong Answer....Try Again !!!!"
+            );
         }
         setProgress(k);
     });
