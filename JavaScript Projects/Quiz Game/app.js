@@ -10,6 +10,8 @@ const opt_3 = document.querySelector('.option-3');
 const opt_4 = document.querySelector('.option-4');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
+var r = document.querySelector(':root');
+var rs = getComputedStyle(r);
 let i = 0;
 let lev;
 
@@ -144,6 +146,9 @@ const checkAns = () => {
         ) : alert(
             "Wrong Answer....Try Again !!!!"
         );
+        let pr = rs.getPropertyValue('--x');
+        pr = pr + 108;
+        r.style.setProperty('--x', pr);
     });
     document.querySelector('.Option-2').addEventListener('click', () => {
         document.querySelector('.Option-2').textContent === Questions[`${i}`].Answer ? alert(
