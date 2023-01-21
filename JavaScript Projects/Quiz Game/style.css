@@ -138,7 +138,7 @@ img{
   font-size: 25px;
   width: auto;
   margin-left: 350px;
-  margin-top: 500px;
+  margin-top: 450px;
   opacity: 0;
   z-index: 10;
   transition: all 0.5s;
@@ -245,7 +245,7 @@ img{
   /* border: 3px solid #05e35e; */
   height: 25px;
   border-radius: 20px;
-  transform: translate(10px,360px);
+  transform: translate(10px,680px);
   overflow: hidden;
 }
 
