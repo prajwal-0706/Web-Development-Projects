@@ -1,62 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Calculator </title>
-    <link rel="stylesheet" href="app.css">
-</head>
-<body>
-    <h1 style="display: flex; justify-content: center;"> Calculator </h1>
-
-    <div class="main">
-
-        <div class="qwe"> 
-            <input type="number" placeholder="Enter the First Number " class="a">
-            <input type="text" placeholder="Enter the Operation" class="b"> 
-            <input type="number" placeholder="Enter the Second Number" class="c">         
-            <input type="number" placeholder="Your Answer"class="d">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cal-wrapper">
+        <div class="heading">
+          <h1>Calculator</h1>
         </div>
-
-        <div class="numbers">
-            <div class="firstline">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-            </div>
-
-            <div class="secondline">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-            </div>
-
-            <div class="thirdline">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>X</button>
-            </div>
-
-            <div class="fourthline">
-                <button>/</button>
-                <button>0</button>
-                <button>C</button>
-                <button>=</button>
-            </div>
+        <div class="input-div">
+          <input class="input" type="number" name="Prajwal" id="input-div" />
         </div>
+        <div class="b-container">
+          <div class="b-left">
+            <div class="row row-1">
+              <div class="btn btn-1">AC</div>
+              <div class="btn">-</div>
+              <div class="btn">/</div>
+            </div>
+            <div class="row row-2">
+              <div class="btn">7</div>
+              <div class="btn">8</div>
+              <div class="btn">9</div>
+            </div>
+            <div class="row row-3">
+              <div class="btn">4</div>
+              <div class="btn">5</div>
+              <div class="btn">3</div>
+            </div>
+            <div class="row row-4">
+              <div class="btn">1</div>
+              <div class="btn">2</div>
+              <div class="btn">3</div>
+            </div>
+            <div class="row row-5">
+              <div class="btn spl-btn">0</div>
+              <div class="btn">.</div>
+            </div>
+          </div>
 
+          <div class="b-right">
+            <div class="btn">*</div>
+            <div class="btn">-</div>
+            <div class="btn spl-btn-1">+</div>
+            <div class="btn spl-btn-1">=</div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-
-
-
-
-
-    <script src="app.js"></script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
