@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body .container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #68a4ff;
+  gap: 2.5rem;
+}
+.container .heading{
+  text-align: center;
+}
+.heading h1{
+  font-size: 55px;
+  color: #fff;
+}
+.clock {
+  height: 350px;
+  width: 350px;
+  background: url("./images/clock.png");
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  justify-content: center;
+  border: 20px solid #fff ;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1),
+              0 20px 20px rgba(0, 0, 0, 0.2),
+              0 0 4px rgba(255,255,255,1) ;
+
+}
+
+.clock::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #848484;
+  z-index: 1000;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+  position: absolute;
+}
+
+.clock .hour,
+.hr {
+  height: 160px;
+  width: 160px;
+}
+
+.clock .min,
+.mn {
+  height: 190px;
+  width: 190px;
+}
+
+.clock .sec,
+.sc {
+  height: 230px;
+  width: 230px;
+}
+
+.hr,
+.sc,
+.mn {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+
+.hr::before {
+  content: "";
+  height: 80px;
+  width: 8px;
+  position: absolute;
+  background-color: #848484;
+  z-index: 10;
+  border-radius: 6px 6px 0 0 ;
+}
+
+.mn::before {
+  content: "";
+  height: 85px;
+  width: 4px;
+  position: absolute;
+  background-color: #d6d6d6;
+  z-index: 11;
+  border-radius: 6px 6px 0 0 ;
+}
+
+.sc::before {
+  content: "";
+  height: 150px;
+  width: 2px;
+  position: absolute;
+  background-color: #ff6767;
+  z-index: 12;
+  border-radius: 6px 6px 0 0 ;
+}
+.changemode{
+  position: fixed;
+  right: 70px;
+  bottom: 65px;
+  z-index: 0;
+}
+.mode{
+  height: 69px;
+  width: 69px;
+  border-radius: 50%;
+  background: #000000;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.light, .dark{
+  position: absolute;
+  width: 39px;
+}
+
+.dark{
+  z-index: 00;
+}
+
+.light{
+  z-index: 100;
+}
+
+
+/* Dark Mode Conditions  */
+
+
+.container.active{
+  background-color: #091921;
+}
+
+.container.active .clock{
+  background-color: #091921;
+  border: 4px solid #091921;
+  box-shadow: 0 -15px 15px rgba(255, 255, 255, 0,05),
+              inset 0 -15px 15px rgba(255, 255, 255, 0,05),
+               0 -15px 15px rgba(0, 0, 0, 0,05),
+              inset 0 -15px 15px rgba(0, 0, 0, 0,05) ;
+}
+
+.container.active .mode{
+  background-color: #fff;
+}
+
+.container.active .light{
+  opacity: 0;
+}
+
+.container.active .hr::before{
+  background-color: #ff105e;
+}
+
+.container.active .mn::before,
+.container.active .sc::before,
+.container.active .clock::before{
+  background-color: #fff;
+}
+
+
+@media screen and (max-width : 400px) {
+  .heading h1{
+    font-size: 41px;
+  }
+  .clock{
+    width: 297px;
+    height: 297px;
+
+  }
+
+  .changemode{
+    right: 32px;
+    bottom: 24px;
+  }
+
+  .mode{
+    width: 51px;
+    height: 51px;
+  }
+  .light , .dark{
+    width: 21px;
+  }
+}
