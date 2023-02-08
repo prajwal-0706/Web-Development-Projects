@@ -146,3 +146,63 @@ body.active{
 a{
     color: #333;
 }
+
+
+@media screen and (max-width : 365px) {
+    .container{
+        top: -21px;
+        height: 471px;
+    }
+    .form-cont{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .form button{
+        width: 58%;
+    }
+    .leftbg{
+        top: 154px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-cont .form{
+        top: 40px;
+    }
+
+    .leftbg .box{
+        top: 13%;
+        width: 100%;
+        gap: 0.3rem;
+    }
+
+    .h2{
+        font-size: 18px;
+    }
+
+    .btn{
+        padding: 6px 23px;
+        font-size: 12px;
+    }
+
+    .form-cont.active {
+        left: 0px;
+        top: 0px;
+        transition: .5s ;    
+        border-radius: 0px;
+    }
+    .form-cont.active .form{
+        top: -22px;
+    }
+    .h1{
+        font-size: 19px;
+    }
+
+    body.active{
+        overflow: hidden;
+    }
+
+    body.active .leftbg .box{
+        top: 63%;
+    }
+}
