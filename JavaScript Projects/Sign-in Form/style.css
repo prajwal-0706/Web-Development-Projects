@@ -148,7 +148,7 @@ a{
 }
 
 
-@media screen and (max-width : 365px) {
+@media screen and (max-width : 400px) {
     .container{
         top: -21px;
         height: 471px;
