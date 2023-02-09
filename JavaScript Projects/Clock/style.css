@@ -23,7 +23,7 @@ body .container {
 }
 .heading h1{
   font-size: 55px;
-  color: #fff;
+  color: #000000;
 }
 .clock {
   height: 350px;
@@ -161,6 +161,9 @@ body .container {
   background-color: #fff;
 }
 
+.container.active .heading h1{
+  color: #fff;
+}
 .container.active .light{
   opacity: 0;
 }

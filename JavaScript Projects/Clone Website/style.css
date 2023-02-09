@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.heading-container{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(14px);
+}
+
+.heading-container .heading-left{
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+    margin-left: 39px;
+}
+.heading-container .heading-left li {
+    font-size: 14px;
+    cursor: pointer;
+}
+.logo {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background: transparent
+    url("https://www.maserati.com/etc.clientlibs/maserati/clientlibs/clientlib-vendorRedesign/resources/img/redesign_menu_desktop_logo_white.svg")
+    no-repeat 50% 50%;
+  background-size: 100%;
+  margin-left: -22%;
+  cursor: pointer;
+}
+
+.container .carousel {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    cursor: pointer;
+}
+
+.container .carousel span img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.container .carousel .mouse-scroll{
+    width: 107px;
+    height: 107px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    opacity: 0;
+    z-index: -10;
+    padding-top: 35px;
+    text-align: center;
+    /* transition: all 10ms ease; */
+}
+
+.container .carousel .mouse-scroll div{
+    color: #000000;
+    font-size: 12px;
+    text-transform: uppercase;
+}
