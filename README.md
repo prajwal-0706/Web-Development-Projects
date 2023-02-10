@@ -13,6 +13,10 @@
 2. [Rock Paper Scisssor Game](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Rock%20Paper%20Scissor%20Paper/)
 3. [Tic Tac Toe Game](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Tic%20Tac%20Toe%20Game/)
 4. [Sign-In Form](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Sign-in%20Form/)
+5. [Calculator](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Calculator/)
+6. [Analog Clock](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Clock/)
+7. [Clone Website ( Ongoing )](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Clone%20Website/)
+
 
 
 
