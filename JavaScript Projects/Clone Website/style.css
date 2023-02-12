@@ -10,7 +10,7 @@
 
 body {
   background-color: #000000;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .container {
@@ -111,4 +111,14 @@ body {
   background: linear-gradient(180deg,rgba(0,0,0,.5),transparent);
   position: absolute;
   left: 0;
+}
+
+.configuratiopn{
+  height: 30vh;
+  width: 100%;
+}
+
+.slide-1{
+  height: inherit;
+  width: inherit;
 }
