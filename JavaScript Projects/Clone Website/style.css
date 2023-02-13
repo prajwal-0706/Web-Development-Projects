@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  color: #fff;
 }
 
 body {
@@ -28,6 +27,7 @@ body {
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(14px);
+  color: #fff;
 }
 
 .heading-container .heading-left {
@@ -104,26 +104,126 @@ body {
   right: 46px;
 }
 
-.carousel::before{
-  content: '';
+.carousel::before {
+  content: "";
   width: 100%;
   height: 50%;
-  background: linear-gradient(180deg,rgba(0,0,0,.5),transparent);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
   position: absolute;
   left: 0;
 }
 
-.configuration{
+.configuration {
   height: 30vh;
   width: 100%;
-  margin-top: 500px ;
+  margin-top: 50px;
   margin-bottom: 500px;
+  position: relative;
+  font-size: 33px;
+  color: #000000;
 }
 
-
-
-.slide-1 img{
+.slide-1 img {
   width: 100%;
   height: 100%;
-  /* object-fit: contain; */
 }
+
+.slide-1 .text-1 {
+  position: absolute;
+  z-index: 10;
+  top: 57px;
+  left: 125px;
+}
+
+.slide-1 .text-2 {
+  position: absolute;
+  top: 111px;
+  font-size: 65px;
+  left: 115px;
+  font-weight: 700;
+}
+
+.slide-1 .text-3 {
+  position: absolute;
+  left: 115px;
+  top: 185px;
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.slide-1 .svg-next {
+  position: absolute;
+  top: 232px;
+  left: 115px;
+}
+
+.slide-1 .svg-next svg {
+  width: 66px;
+  display: block;
+}
+
+.slide-1 .svg-next::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3.5px;
+  background-color: #000000;
+  color: #000000;
+  top: 93px;
+  left: 25px;
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
+
+.slide-1 .svg-next::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3.5px;
+  background-color: #000000;
+  color: #000000;
+  top: 103px;
+  left: 25px;
+  border-radius: 5px;
+  transform: rotate(-45deg);
+}
+
+.configuration .slide-1 .select {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  top: 406px;
+  left: 115px;
+  gap: 3rem;
+}
+
+.configuration .slide-1 .select .select-1::before {
+  content: "";
+  position: absolute;
+  width: 181px;
+  background-color: #000000;
+  height: 5px;
+  top: 56px;
+  left: -7px;
+}
+
+.configuration .slide-1 .select .select-2::before {
+  content: "";
+  position: absolute;
+  width: 141px;
+  background-color: #000000;
+  height: 5px;
+  top: 56px;
+  left: 174px;
+}
+
+/* :hover ~ ::before{
+  cursor: pointer;
+  width: 141px;
+} */
+
+/* .select-2:hover::before {
+  cursor: pointer;
+  width: 141px;
+} */
