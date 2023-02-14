@@ -139,9 +139,44 @@ body {
 
 .slide-1 .text-1 {
   position: absolute;
+  width: 0%;
   z-index: 10;
   top: 57px;
+  display: block;
   left: 125px;
+}
+
+.slide-1 .text-1 h1{
+  animation: animate 5.5s 1;
+
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    /* width: 0%; */
+  }
+  25%{
+    opacity: 0.25;
+    transition: all 0.5s ease-in;
+    /* width: 25%; */
+  }
+  50%{
+    opacity: 0.50;
+    transition: all 0.5s ease-in;
+    /* width: 50%; */
+  }
+  75%{
+    opacity: 0.75;
+    /* width: 75%; */
+    transition: all 0.5s ease-in;
+  }
+  100%{
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    /* width: 100%; */
+  }
 }
 
 .slide-1 .text-2 {
@@ -268,4 +303,3 @@ body {
 .configuration .slide-1 .select .select-2:hover::before {
   width: 143%;
 }
-
