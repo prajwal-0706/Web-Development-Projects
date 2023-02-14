@@ -189,7 +189,7 @@ body {
 }
 
 .configuration .slide-1 .select {
-  height: 100%;
+  height: 44%;
   width: 100%;
   position: absolute;
   display: flex;
@@ -198,32 +198,65 @@ body {
   gap: 3rem;
 }
 
+.select-1,
+.select-2 {
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+.configuration .slide-1 .select .select-1::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  background-color: #9b9b9b;
+  height: 2px;
+  top: 57px;
+  left: -3px;
+  border-radius: 3px;
+}
+
+
+
 .configuration .slide-1 .select .select-1::before {
   content: "";
   position: absolute;
-  width: 181px;
+  display: block;
+  width: 0%;
   background-color: #000000;
   height: 5px;
   top: 56px;
-  left: -7px;
+  left: -3px;
+  z-index: 10;
+  transition: all 0.3s ease-in;
+  border-radius: 3px;
+}
+.configuration .slide-1 .select .select-1.active::before{
+  width: 125%;
+}
+
+.configuration .slide-1 .select .select-2.active::before{
+  width: 143%;
+}
+
+.configuration .slide-1 .select .select-1:hover:before {
+  width: 125%;
 }
 
 .configuration .slide-1 .select .select-2::before {
   content: "";
   position: absolute;
-  width: 141px;
+  width: 0%;
   background-color: #000000;
   height: 5px;
   top: 56px;
-  left: 174px;
+  left: -13px;
+  z-index: 10;
+  transition: all 0.3s ease-in;
+  border-radius: 3px;
 }
 
-/* :hover ~ ::before{
-  cursor: pointer;
-  width: 141px;
-} */
+.configuration .slide-1 .select .select-2:hover::before {
+  width: 143%;
+}
 
-/* .select-2:hover::before {
-  cursor: pointer;
-  width: 141px;
-} */

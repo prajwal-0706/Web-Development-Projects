@@ -12,3 +12,16 @@ carousel.addEventListener("mousemove", (e) => {
     mouse.style.left = `${x}px`;
     mouse.style.top = `${y}px`;
 });
+
+const select_1 = document.querySelector(".select-1");
+const select_2 = document.querySelector(".select-2");
+
+select_1.addEventListener("click", () => {
+    select_1.classList.add("active");
+    select_2.classList.remove("active");
+});
+
+select_2.addEventListener("click", () => {
+    select_2.classList.add("active");
+    select_1.classList.remove("active");
+});
