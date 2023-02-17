@@ -15,7 +15,16 @@
 4. [Sign-In Form](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Sign-in%20Form/)
 5. [Calculator](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Calculator/)
 6. [Analog Clock](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Clock/)
-7. [Clone Website ( Ongoing )](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Clone%20Website/)
+7. [Clone Website](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Clone%20Website/)
+
+
+<h3>React Projects</h3>
+
+<hr>
+
+1. [News App](https://news-app-prajwal.netlify.app/)
+2. [Calculator App](https://calculator-prajwal-06.netlify.app/)
+2. [Notes Keeper App](https://notes-keeper-prajwal.netlify.app/)
 
 
 
