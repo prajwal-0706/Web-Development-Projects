@@ -1,13 +1,13 @@
 #                                              **Web Development Projects** 
 
 
-<h3>HTML & CSS Projects</h3>  
+<h3>1. HTML & CSS Projects</h3>  
 
 1. [Login Page UI](https://prajwal-0706.github.io/Web-Development-Projects/HTML-CSS/Login-page/)
 
 <hr>
 
-<h3>Javascript Projects</h3>
+<h3>2. JavaScript Projects</h3>
 
 1. [Quiz Game](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Quiz%20Game/)
 2. [Rock Paper Scisssor Game](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Rock%20Paper%20Scissor%20Paper/)
@@ -18,9 +18,10 @@
 7. [Clone Website](https://prajwal-0706.github.io/Web-Development-Projects/JavaScript%20Projects/Clone%20Website/)
 
 
-<h3>React Projects</h3>
-
 <hr>
+
+<h3>3. React Projects</h3>
+
 
 1. [News App](https://news-app-prajwal.netlify.app/)
 2. [Calculator App](https://calculator-prajwal-06.netlify.app/)
