@@ -3,7 +3,7 @@
 
 <h3>1. HTML & CSS Projects</h3>  
 
-1. [Login Page UI](https://prajwal-0706.github.io/Web-Development-Projects/HTML-CSS/Login-page/)
+1. [Login Page Concept](https://prajwal-0706.github.io/Web-Development-Projects/HTML-CSS/Login-page/)
 
 <hr>
 
